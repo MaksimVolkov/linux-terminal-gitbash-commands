@@ -1,0 +1,25 @@
+### JetBrains template
+# JetBrains IDEs
+.idea
+.idea/*
+*.iml
+
+# CMake
+cmake-build-*/
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# VisualStudioCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
