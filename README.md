@@ -5,7 +5,7 @@
 | №  | Task title EN                                                                       | Task title RU                                                                      | Title task FI |
 |----|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------|
 | 1  | [Show current directory](#link1)                                                    | Посмотреть где я                                                                   |               |
-| 2  | [Make directory dir](#link2)                                                        | Создать папку                                                                      |               |
+| 2  | [Create a folder](#link2)                                                           | Создать папку                                                                      |               |
 | 3  | [Change directory to dir](#link3)                                                   | Зайти в папку                                                                      |               |
 | 4  | [Create 3 folders](#link4)                                                          | Создать 3 папки                                                                    |               |
 | 5  | [Go to any folder](#link5)                                                          | Зайти в любоую папку                                                               |               |           
@@ -42,22 +42,36 @@ Input:
 ````
 Output:
 ````
-    MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (master)
+    .... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (master)
     $ pwd    
     /c/var/1a-testing-course/linux-terminal-gitbash-commands
 ````
-### <a id="link2">2. Make directory dir | Создать папку</a>
+### <a id="link2">2. Create a folder | Создать папку</a>
 
 Input:
 ```` bash
-    
+    mkdir screenshots
+    ls
 ````
+Step one
+
+![screenshots](screenshots/Screenshot_0.jpg)
+
+Result
+
+![screenshots](screenshots/Screenshot_1.jpg)
+
 Output:
 ````
-
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-2)
+    $     mkdir screenshots 
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-2)
+    $     ls                                                                                      
+    README.md  screenshots
 ````
 
-### <a id="link3">3. Change directory to dir | Зайти в папку</a>
+### <a id="link3">3. Go to folder | Зайти в папку</a>
 
 Input:
 ```` bash
