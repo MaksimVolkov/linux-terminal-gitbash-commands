@@ -6,7 +6,7 @@
 |----|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------|
 | 1  | [Show current directory](#link1)                                                    | Посмотреть где я                                                                   |               |
 | 2  | [Create a folder](#link2)                                                           | Создать папку                                                                      |               |
-| 3  | [Change directory to dir](#link3)                                                   | Зайти в папку                                                                      |               |
+| 3  | [Enter folder](#link3)                                                              | Зайти в папку                                                                      |               |
 | 4  | [Create 3 folders](#link4)                                                          | Создать 3 папки                                                                    |               |
 | 5  | [Go to any folder](#link5)                                                          | Зайти в любоую папку                                                               |               |           
 | 6  | [Create 5 files (3 txt, 2 json)](#link6)                                            | Создать 5 файлов (3 txt, 2 json)                                                   |               |
@@ -71,15 +71,26 @@ Output:
     README.md  screenshots
 ````
 
-### <a id="link3">3. Go to folder | Зайти в папку</a>
+### <a id="link3">3. Enter folder | Зайти в папку</a>
 
 Input:
 ```` bash
-    
+    pwd
+    cd screenshots
+    pwd
 ````
 Output:
 ````
-
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-3)
+    $ pwd 
+    /c/var/1a-testing-course/linux-terminal-gitbash-commands
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-3)
+    $ cd screenshots
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots (task-3)
+    $ pwd                                                                                                     
+    /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots
 ````
 
 ### <a id="link4">4. Create 3 folders | Создать 3 папки</a>
