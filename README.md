@@ -2,35 +2,35 @@
 
 ### Linux terminal (GitBash) commands
 
-| №  | Task title EN                                                                       | Task title RU                                                                      | Title task FI |
+| №  | Task title EN               | Task title RU              | Title task FI |
 |----|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------|
-| 1  | [Show current directory](#link1)                                                    | Посмотреть где я                                                                   |               |
-| 2  | [Create a folder](#link2)                                                           | Создать папку                                                                      |               |
-| 3  | [Enter folder](#link3)                                                              | Зайти в папку                                                                      |               |
-| 4  | [Create 3 folders](#link4)                                                          | Создать 3 папки                                                                    |               |
-| 5  | [Go to any folder](#link5)                                                          | Зайти в любоую папку                                                               |               |           
-| 6  | [Create 5 files (3 txt, 2 json)](#link6)                                            | Создать 5 файлов (3 txt, 2 json)                                                   |               |
-| 7  | [Create 3 folders](#link7)                                                          | Создать 3 папки                                                                    |               |
-| 8  | [List the contents of a folder](#link8)                                             | Вывести список содержимого папки                                                   |               |
-| 9  | [Open any txt file](#link9)                                                         | + Открыть любой txt файл                                                           |               |
-| 10 | [Write something there, any text.](#link10)                                         | + написать туда что-нибудь, любой текст.                                           |               |
-| 11 | [Save and exit](#link11)                                                            | + сохранить и выйти.                                                               |               |
-| 12 | [Exit folder one level up](#link12)                                                 | Выйти из папки на уровень выше                                                     |               |
-| 13 | [Move any 2 files you created to any other folder.](#link13)                        | переместить любые 2 файла, которые вы создали, в любую другую папку.               |               |
-| 14 | [Copy any 2 files you created to any other folder.](#link14)                        | скопировать любые 2 файла, которые вы создали, в любую другую папку.               |               |
-| 15 | [Find file by name](#link15)                                                        | Найти файл по имени                                                                |               |
-| 16 | [View content in real time (grep command) learn how it works.](#link16 )            | просмотреть содержимое в реальном времени (команда grep) изучите как она работает. |               |
-| 17 | [Output the first few lines from a text file](#link17 )                             | вывести несколько первых строк из текстового файла                                 |               |
-| 18 | [Output the last few lines from a text file](#link18 )                              | вывести несколько последних строк из текстового файла                              |               |
-| 19 | [View the contents of a long file (the less command) learn how it works.](#link19 ) | просмотреть содержимое длинного файла (команда less) изучите как она работает.     |               |
-| 20 | [Display date and time](#link20 )                                                   | вывести дату и время                                                               |               |
+| 1  | [Show current directory](#link1)            | Посмотреть где я               |   |
+| 2  | [Create a folder](#link2)               | Создать папку              |   |
+| 3  | [Enter folder](#link3)              | Зайти в папку              |   |
+| 4  | [Create 3 folders](#link4)              | Создать 3 папки                |   |
+| 5  | [Go to any folder](#link5)              | Зайти в любоую папку               |   |   
+| 6  | [Create 5 files (3 txt, 2 json)](#link6)            | Создать 5 файлов (3 txt, 2 json)           |   |
+| 7  | [Create 3 folders](#link7)              | Создать 3 папки                |   |
+| 8  | [List the contents of a folder](#link8)         | Вывести список содержимого папки           |   |
+| 9  | [Open any txt file](#link9)             | + Открыть любой txt файл               |   |
+| 10 | [Write something there, any text.](#link10)         | + написать туда что-нибудь, любой текст.           |   |
+| 11 | [Save and exit](#link11)            | + сохранить и выйти.               |   |
+| 12 | [Exit folder one level up](#link12)             | Выйти из папки на уровень выше             |   |
+| 13 | [Move any 2 files you created to any other folder.](#link13)        | переместить любые 2 файла, которые вы создали, в любую другую папку.   |   |
+| 14 | [Copy any 2 files you created to any other folder.](#link14)        | скопировать любые 2 файла, которые вы создали, в любую другую папку.   |   |
+| 15 | [Find file by name](#link15)            | Найти файл по имени                |   |
+| 16 | [View content in real time (grep command) learn how it works.](#link16 )    | просмотреть содержимое в реальном времени (команда grep) изучите как она работает. |   |
+| 17 | [Output the first few lines from a text file](#link17 )         | вывести несколько первых строк из текстового файла         |   |
+| 18 | [Output the last few lines from a text file](#link18 )      | вывести несколько последних строк из текстового файла      |   |
+| 19 | [View the contents of a long file (the less command) learn how it works.](#link19 ) | просмотреть содержимое длинного файла (команда less) изучите как она работает. |   |
+| 20 | [Display date and time](#link20 )           | вывести дату и время               |   |
 
 ### Task of increased complexity / Задание повышеной сложности * /
 
-| №  | Task title EN                                                                                      | Task title RU                                                                      |
+| №  | Task title EN                  | Task title RU              |
 |----|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | 21 | [Send an http request to the server. <br/> http://162.55.220.72:5006/terminal-hw-request](#link21) | [Отправить http запрос на сервер. http://162.55.220.72:5006/terminal-hw-request]() |
-| 22 | [Write a script that will automatically <br/> execute the points 3, 4, 5, 6, 7, 8, 13](#link22)    | Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13         |
+| 22 | [Write a script that will automatically <br/> execute the points 3, 4, 5, 6, 7, 8, 13](#link22)    | Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13     |
 
 ### Solution of tasks / Решение задач / 
 
@@ -64,10 +64,10 @@ Result
 Output:
 ````
     ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-2)
-    $     mkdir screenshots 
+    $ mkdir screenshots 
     
     ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-2)
-    $     ls                                                                                      
+    $ ls
     README.md  screenshots
 ````
 
@@ -89,7 +89,7 @@ Output:
     $ cd screenshots
     
     ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots (task-3)
-    $ pwd                                                                                                     
+    $ pwd
     /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots
 ````
 
@@ -97,10 +97,107 @@ Output:
 
 Input:
 ```` bash
-    
+    mkdir task_4
+    cd task_4 
+    mkdir cild_dir_1 cild_dir_2 cild_dir_3
+    cd ..
 ````
 Output:
 ````
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-4)
+    $ mkdir cild_dir_1 cild_dir_2 cild_dir_3
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-4)
+    $ mkdir task_4
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-4)
+    $ cd task_4
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
+    $ mkdir cild_dir_1 cild_dir_2 cild_dir_3
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
+    $ ls
+    cild_dir_1  cild_dir_2  cild_dir_3
+
+````
+#### Some examples extra:
+
+Input:
+```` bash
+    cd task_4
+    mkdir extra_examples
+    cd extra_examples
+    mkdir dir{1..5}
+    ls 
+    mkdir {1,2,3}
+    ls
+    mkdir test{01..5}  
+    ls  
+    mkdir -p dir_parent/cild_dir_{1..3}
+    ls
+    cd dir_parent
+    ls
+    cd ..
+    mkdir -p `date '+%y%m%d'`/{1,2,3}
+    ls
+    cd `date '+%y%m%d'`
+    ls
+    cd ..
+````
+Output:
+````
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
+    $ cd task_4
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
+    $ mkdir extra_examples
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
+    $ cd extra_examples
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+    $ mkdir dir{1..5}
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+    $ ls
+    dir1  dir2  dir3  dir4  dir5
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+    $ mkdir {1,2,3}
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+    $ ls
+    1  2  3  dir1  dir2  dir3  dir4  dir5
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+    $ mkdir test{01..5}
+    
+    $ cd dir_parent
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/dir_parent (task-4)
+    $ ls
+    cild_dir_1  cild_dir_2  cild_dir_3
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/dir_parent (task-4)
+    $ cd ..
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+    $ mkdir -p `date '+%y%m%d'`/{1,2,3}
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+    $ ls
+    1  2  230801  3  dir1  dir2  dir3  dir4  dir5  dir_parent  test01  test02  test03  test04  test05
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+    $ cd `date '+%y%m%d'`
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/230801 (task-4)
+    $ ls
+    1  2  3
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/230801 (task-4)
+    $ cd ..
 
 ````
 
