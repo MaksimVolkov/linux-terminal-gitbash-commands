@@ -38,8 +38,9 @@
 
 Input:
 ```` bash
-    pwd    
+pwd    
 ````
+
 Output:
 ````
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (master)
@@ -76,6 +77,7 @@ pwd
 cd screenshots
 pwd
 ````
+
 Output:
 ````
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-3)
@@ -99,6 +101,7 @@ cd task_4
 mkdir cild_dir_1 cild_dir_2 cild_dir_3
 cd ..
 ````
+
 Output:
 ````
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-4)
@@ -117,6 +120,7 @@ $ mkdir cild_dir_1 cild_dir_2 cild_dir_3
 $ ls
 cild_dir_1  cild_dir_2  cild_dir_3
 ````
+
 #### Some examples extra:
 
 Input:
@@ -205,6 +209,7 @@ tree
 cd task_5/cild_dir_task_2
 pwd
 ````
+
 Output:
 ````
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_5 (dev)
@@ -239,6 +244,7 @@ touch file1.txt file2.txt file3.txt file4.json file5.json
 cd ..
 tree
 ````
+
 Output:
 ````
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_6 (dev)
@@ -267,7 +273,6 @@ $ tree
 1 directory, 6 files
 ````
 
-
 ### <a id="link7">7. Create 3 folders</a>  |  [Back to list](#back_to_list)
 
 Input:
@@ -277,6 +282,7 @@ cd task_7
 touch task_folder{1..3}/task_7.log task_folder{1..3}/task_7.json task_folder{1..3}/task_7.txt
 tree
 ````
+
 Output:
 ````
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_7 (dev)
@@ -317,6 +323,7 @@ ls -l
 ls -R
 tree
 ````
+
 Output:
 ````
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_8 (dev)
@@ -346,7 +353,6 @@ $ tree
 `-- README.md        
                      
 0 directories, 1 file
-
 ````
 
 ### <a id="link9">9. Open any txt file</a>  |  [Back to list](#back_to_list)
@@ -374,8 +380,8 @@ lorem ipsum
 
 Input:
 ```` bash
-    cat > task_10.txt
-    echo 'any text lorem ipsum' > task_10.txt
+cat > task_10.txt
+echo 'any text lorem ipsum' > task_10.txt
 ````
 Output:
 ````
@@ -390,7 +396,7 @@ $ echo 'any text lorem ipsum' > task_10.txt
 
 Input:
 ```` bash
-    - esc :qw
+- esc :qw
 ````
 Output:
 ````
@@ -420,6 +426,7 @@ tree
 mv file1.txt file2.txt task_13/
 tree
 ````
+
 Output:
 ````
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_13 (dev)
@@ -507,10 +514,10 @@ $ find . -name 'file_name_2.txt'
 
 Input:
 ```` bash
-    touch example.log
-    echo "lorem ipsum lorem" >> example.log
-    echo "lorem ipsum error" >> example.log
-    tail -f example.log | grep 'error'
+touch example.log
+echo "lorem ipsum lorem" >> example.log
+echo "lorem ipsum error" >> example.log
+tail -f example.log | grep 'error'
 ````
 Output:
 ````
@@ -612,7 +619,7 @@ lorem_ipsum.txt (END)
 
 Input:
 ```` bash
-    date
+date
 ````
 Output:
 ````
