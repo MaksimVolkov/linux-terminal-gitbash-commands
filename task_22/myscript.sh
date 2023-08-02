@@ -1,8 +1,9 @@
 #!/bin/bash
 
+mkdir task_22
+
 echo "Item 3: Enter folder | Зайти в папку"
-echo "start from the parent directory and go there"
-cd
+cd task_22
 
 echo "Item 4: Create 3 folders"
 mkdir folder_1 folder_2 folder_3

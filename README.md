@@ -198,233 +198,487 @@ Output:
 
 ````
 
-### <a id="link5">5. Go to any folder | Зайти в любоую папку</a>
+### <a id="link5">5. Go to any folder</a>
 
 Input:
 ```` bash
-    cd /c/var/1a-testing-course/linux-terminal-gitbash-commands/
-    ls
-    cd /c/var/1a-testing-course/linux-terminal-gitbash-commands/
+mkdir -p task_5/cild_dir_task_{1..3}
+tree
+cd task_5/cild_dir_task_2
+pwd
 ````
 Output:
 ````
-    ... MINGW64 /c/var/1a-testing-course
-    $ cd /c/var/1a-testing-course/linux-terminal-gitbash-commands/
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-5)
-    $ ls
-    README.md  screenshots  task_4
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_5 (dev)
+$ mkdir -p task_5/cild_dir_task_{1..3}                                                            
 
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-5)
-    $ cd screenshots/
-        
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots (task-5)
-    $ cd ..
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/ (task-5)
-    $ cd task_4
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-5)
-    $ ls
-    cild_dir_1  cild_dir_2  cild_dir_3  extra_examples
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-5)
-    $ cd extra_examples
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-5)
-    $ ls
-    1  2  230801  3  dir1  dir2  dir3  dir4  dir5  dir_parent  test01  test02  test03  test04  test05
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-5)
-    $ cd dir_parent
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/dir_parent (task-5)
-    $ ls
-    cild_dir_1  cild_dir_2  cild_dir_3
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/dir_parent (task-5)
-    $ cd /c/var/1a-testing-course/linux-terminal-gitbash-commands/
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands
-    $ 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_5 (dev)
+$ tree                                                                                            
+.                   
+|-- README.md       
+`-- task_5          
+    |-- cild_dir_task_1
+    |-- cild_dir_task_2
+    `-- cild_dir_task_3
+                       
+4 directories, 1 file  
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_5 (dev)
+$ cd task_5/cild_dir_task_2                                                                       
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_5/task_5/cild_dir_task_2 (dev)
+$ pwd                                                                                                                    
+/c/var/1a-testing-course/linux-terminal-gitbash-commands/task_5/task_5/cild_dir_task_2    
 ````
 
-### <a id="link6">6. Create 5 files (3 txt, 2 json) | Создать 5 файлов (3 txt, 2 json)</a>
+### <a id="link6">6. Create 5 files (3 txt, 2 json)</a>
 
 Input:
 ```` bash
-    cd /c/var/1a-testing-course/linux-terminal-gitbash-commands/
-    mkdir task_6
-    cd task_6
-    cat > names.txt Orlando Osiris Hassan
+mkdir task_6
+cd task_6
+touch file1.txt file2.txt file3.txt file4.json file5.json
+cd ..
+tree
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_6 (dev)
+$ mkdir task_6                                                                                    
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_6 (dev)
+$ cd task_6                                                                                       
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_6/task_6 (dev)
+$ touch file1.txt file2.txt file3.txt file4.json file5.json                                              
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_6/task_6 (dev)
+$ cd ..                                                                                                  
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_6 (dev)
+$ tree                                                                                            
+.
+|-- README.md    
+`-- task_6       
+    |-- file1.txt
+    |-- file2.txt
+    |-- file3.txt
+    |-- file4.json
+    `-- file5.json
+
+1 directory, 6 files
 ````
 
-### <a id="link7">7. Create 3 folders | Создать 3 папки</a>
+
+### <a id="link7">7. Create 3 folders</a>
 
 Input:
 ```` bash
-    
+mkdir -p task_7/task_folder{1..3}
+cd task_7
+touch task_folder{1..3}/task_7.log task_folder{1..3}/task_7.json task_folder{1..3}/task_7.txt
+tree
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_7 (dev)
+$ mkdir -p task_7/task_folder{1..3}                                                               
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_7 (dev)
+$ cd task_7                                                                                       
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_7/task_7 (dev)
+$ touch task_folder{1..3}/task_7.log task_folder{1..3}/task_7.json task_folder{1..3}/task_7.txt          
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_7/task_7 (dev)
+$ tree                                                                                                   
+.
+|-- task_folder1   
+|   |-- task_7.json
+|   |-- task_7.log 
+|   `-- task_7.txt 
+|-- task_folder2   
+|   |-- task_7.json
+|   |-- task_7.log 
+|   `-- task_7.txt 
+`-- task_folder3
+    |-- task_7.json
+    |-- task_7.log
+    `-- task_7.txt
+
+3 directories, 9 files
 ````
 
-### <a id="link8">8. List the contents of a folder | Вывести список содержимого папки</a>
+### <a id="link8">8. List the contents of a folder</a>
 
 Input:
 ```` bash
-    
+ls
+ls -la
+ls -l
+ls -R
+tree
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_8 (dev)
+$ ls                                                                                              
+README.md
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_8 (dev)
+$ ls -la                                                                                          
+total 5
+drwxr-xr-x 1 Maks 197611   0 Aug  2 22:40 .        
+drwxr-xr-x 1 Maks 197611   0 Aug  2 18:51 ..       
+-rw-r--r-- 1 Maks 197611 306 Aug  2 22:40 README.md
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_8 (dev)
+$ ls -l                                                                                           
+total 1
+-rw-r--r-- 1 Maks 197611 306 Aug  2 22:40 README.md
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_8 (dev)
+$ ls -R                                                                                           
+.:       
+README.md
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_8 (dev)
+$ tree                                                                                            
+.                    
+`-- README.md        
+                     
+0 directories, 1 file
 
 ````
 
-### <a id="link9">9. Open any txt file | + Открыть любой txt файл</a>
+### <a id="link9">9. Open any txt file</a>
 
 Input:
 ```` bash
-    
+touch task_9.txt
+echo "lorem ipsum" > task_9.txt
+cat task_9.txt
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_9 (dev)
+$ touch task_9.txt                                                                                
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_9 (dev)
+$ echo "lorem ipsum" > task_9.txt                                                                 
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_9 (dev)
+$ cat task_9.txt                                                                                  
+lorem ipsum
 ````
 
-### <a id="link10">10. Write something there, any text. | + написать туда что-нибудь, любой текст.</a>
+### <a id="link10">10. Write something there, any text.</a>
 
 Input:
 ```` bash
-    
+    cat > task_10.txt
+    echo 'any text lorem ipsum' > task_10.txt
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_10 (dev)
+$ cat > task_10.txt                                                                            
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_10 (dev)
+$ echo 'any text lorem ipsum' > task_10.txt 
 ````
-### <a id="link11">11. Save and exit | + сохранить и выйти.</a>
+
+### <a id="link11">11. Save and exit</a>
 
 Input:
 ```` bash
-    
+    - esc :qw
 ````
 Output:
 ````
-
 ````
-### <a id="link12">12. Exit folder one level up | Выйти из папки на уровень выше</a>
+
+### <a id="link12">12. Exit folder one level up</a>
 
 Input:
 ```` bash
-    
+    cd ..
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_12 (dev)
+$     cd ..                                                                                        
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands
 ````
-### <a id="link13">13. Move any 2 files you created to any other folder. | переместить любые 2 файла, которые вы создали, в любую другую папку.</a>
+
+### <a id="link13">13. Move any 2 files you created to any other folder.</a>
 
 Input:
 ```` bash
-    
+mkdir task_13
+touch file1.txt file2.txt
+tree
+mv file1.txt file2.txt task_13/
+tree
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_13 (dev)
+$ mkdir task_13                                                                                    
+mkdir: cannot create directory 'task_13': File exists
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_13 (dev)
+$ touch file1.txt file2.txt                                                                        
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_13 (dev)
+$ tree                                                                                             
+.
+|-- README.md    
+|-- file1.txt    
+|-- file2.txt    
+`-- task_13      
+    |-- file1.txt
+    `-- file2.txt   
+                    
+1 directory, 5 files
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_13 (dev)
+$ mv file1.txt file2.txt task_13/                                                                  
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_13 (dev)
+$ tree                                                                                             
+.                   
+|-- README.md       
+`-- task_13         
+    |-- file1.txt   
+    `-- file2.txt   
+                    
+1 directory, 3 files
 ````
-### <a id="link14">14. Copy any 2 files you created to any other folder. | скопировать любые 2 файла, которые вы создали, в любую другую папку.</a>
+
+### <a id="link14">14. Copy any 2 files you created to any other folder.</a>
 
 Input:
 ```` bash
-    
+mkdir task_14
+touch file3.txt file4.json
+ls
+cp file3.txt file4.json task_14/
+ls
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_14 (dev)
+$ mkdir task_14                                                                                    
+mkdir: cannot create directory 'task_14': File exists
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_14 (dev)
+$ touch file3.txt file4.json                                                                       
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_14 (dev)
+$ ls                                                                                               
+README.md  file3.txt  file4.json  task_14
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_14 (dev)
+$ cp file3.txt file4.json task_14/                                                                 
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_14 (dev)
+$ ls                                                                                               
+README.md  file3.txt  file4.json  task_14
 ````
-### <a id="link15">15. Find a file by name | Найти файл по имени</a>
+
+### <a id="link15">15. Find a file by name</a>
 
 Input:
 ```` bash
-    
+touch file_name_1.txt file_name_2.txt file_name_3.txt
+find . -name 'file_name_2.txt'
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_15 (dev)
+$ touch file_name_1.txt file_name_2.txt file_name_3.txt                                            
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_15 (dev)
+$ find . -name 'file_name_2.txt'                                                                   
+./file_name_2.txt
 ````
-### <a id="link16">16. View content in real-time (grep command) and learn how it works. | просмотреть содержимое в реальном времени (команда grep) изучите как она работает.</a>
+
+### <a id="link16">16. View content in real-time (grep command) and learn how it works.</a>
 
 Input:
 ```` bash
-    
+    touch example.log
+    echo "lorem ipsum lorem" >> example.log
+    echo "lorem ipsum error" >> example.log
+    tail -f example.log | grep 'error'
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_16 (dev)
+$ touch example.log                                                                            
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_16 (dev)
+$ echo "lorem ipsum lorem" >> example.log                                                      
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_16 (dev)
+$ echo "lorem ipsum error" >> example.log                                                      
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_16 (dev)
+$ tail -f example.log | grep 'error'                                                           
+lorem ipsum error
 
 ````
-### <a id="link17">17. Output the first few lines from a text file | вывести несколько первых строк из текстового файла</a>
+
+### <a id="link17">17. Output the first few lines from a text file</a>
 
 Input:
 ```` bash
-    
+touch example.txt
+echo "lorem ipsum lorem" >> example.txt
+echo "lorem ipsum error" >> example.txt
+head -n 2 example.txt
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_17 (dev)
+$ touch example.txt                                                                                
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_17 (dev)
+$ echo "lorem ipsum lorem" >> example.txt                                                          
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_17 (dev)
+$ echo "lorem ipsum error" >> example.txt                                                          
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_17 (dev)
+$ head -n 2 example.txt                                                                            
+lorem ipsum lorem
+lorem ipsum error
+  
 ````
-### <a id="link18">18. Output the last few lines from a text file | вывести несколько последних строк из текстового файла</a>
+
+### <a id="link18">18. Output the last few lines from a text file</a>
 
 Input:
 ```` bash
-    
+touch example.txt
+echo "lorem ipsum lorem" >> example.txt
+echo "lorem ipsum error" >> example.txt
+tail -n 2 example.txt
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_18 (dev)
+$ touch example.txt                                                                                
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_18 (dev)
+$ echo "lorem ipsum lorem" >> example.txt                                                          
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_18 (dev)
+$ echo "lorem ipsum error" >> example.txt                                                          
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_18 (dev)
+$ tail -n 2 example.txt                                                                            
+lorem ipsum lorem
+lorem ipsum error
 ````
-### <a id="link19">19. View the contents of a long file (the less command) and learn how it works. | просмотреть содержимое длинного файла (команда less) изучите как она работает.</a>
+
+### <a id="link19">19. View the contents of a long file (the less command) and learn how it works.</a>
 
 Input:
 ```` bash
-    
+cat > lorem_ipsum.txt
+echo 'What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the..' > lorem_ipsum.txt
+less lorem_ipsum.txt
 ````
 Output:
 ````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_19 (dev)
+$ cat > lorem_ipsum.txt
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_19 (dev)
+$ echo 'What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the..' > lorem_ipsum.txt
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_19 (dev)
+$ less lorem_ipsum.txt
+
+What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the..
+~
+~
+lorem_ipsum.txt (END)
+````
 
 ````
-### <a id="link20">20. Display date and time | вывести дату и время</a>
+### <a id="link20">20. Display date and time</a>
 
 Input:
 ```` bash
-    
+    date
 ````
 Output:
 ````
-
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_20 (dev)
+$     date                                                                                         
+Wed Aug  2 22:05:35 FLEDT 2023
 ````
 
 
-### <a id="link21">21. Send an http request to the server. http://162.55.220.72:5006/terminal-hw-request | Отправить http запрос на сервер. http://162.55.220.72:5006/terminal-hw-request</a>
+### <a id="link21">21. Send an http request to the server. http://162.55.220.72:5006/terminal-hw-request</a>
+
+Input:
+````bash
+curl "http://162.55.220.72:5006/terminal-hw-request"
+curl "http://162.55.220.72:5005/get_method?name=maksim&age=33"
+````
+Output:
+````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_21 (dev)
+$ curl "http://162.55.220.72:5006/terminal-hw-request"                                             
+{                                                                                                                                 
+  "Intro": "Hello!! This is your the first response from server",                                                                 
+  "Tasks": {                                                                                                                      
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)", 
+    "result": [                                                                                                                   
+      "Your_String",                                                                                                              
+      "Your_number"                                                                                                               
+    ]                                                                                                                             
+  }                                                                                                                               
+}                                                                                                                                 
+                                                                                  
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_21 (dev)
+$ curl "http://162.55.220.72:5005/get_method?name=maksim&age=33"                                   
+[           
+  "maksim", 
+  "33"      
+]
+````
+
+### <a id="link22">22. Write a script that will automatically execute the points 3, 4, 5, 6, 7, 8, 13</a>
 
 Input:
 ```` bash
-    
+./myscript.sh
 ````
 Output:
 ````
-
-````
-### <a id="link22">22. Write a script that will automatically execute the points 3, 4, 5, 6, 7, 8, 13 | Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13</a>
-
-Input:
-```` bash
-    
-````
-Output:
-````
+MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_22 (dev)
+$ ./myscript.sh                                                                                    
+mkdir: cannot create directory 'task_22': File exists
+Item 3: Enter folder | Зайти в папку                 
+Item 4: Create 3 folders                             
+mkdir: cannot create directory 'folder_1': File exists
+mkdir: cannot create directory 'folder_2': File exists
+mkdir: cannot create directory 'folder_3': File exists
+Item 5: Go to any folder                              
+Item 6: Create 5 files (3 txt, 2 json)
+Item 7: Create 3 folders
+mkdir: cannot create directory 'folder_4': File exists
+mkdir: cannot create directory 'folder_5': File exists
+mkdir: cannot create directory 'folder_6': File exists
+Item 8: List the contents of a folder                 
+file_1.txt  file_2.txt  file_3.txt  file_4.json  file_5.json  folder_4  folder_5  folder_6
+Item 13: Move any 2 files you created to any other folder.
 
 ````
