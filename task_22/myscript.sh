@@ -6,7 +6,7 @@ echo "Item 3: Enter folder | Зайти в папку"
 cd task_22
 
 echo "Item 4: Create 3 folders"
-mkdir folder_1 folder_2 folder_3
+mkdir folder_{1..3}
 
 echo "Item 5: Go to any folder"
 cd folder_1
@@ -19,6 +19,8 @@ mkdir folder_4 folder_5 folder_6
 
 echo "Item 8: List the contents of a folder"
 ls
+tree
 
 echo "Item 13: Move any 2 files you created to any other folder."
 mv file_1.txt file_2.txt folder_4/
+tree

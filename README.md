@@ -1,6 +1,6 @@
 # linux-terminal-gitbash-commands
 
-### Linux terminal (GitBash) commands
+### <a id="back_to_list">Linux terminal (GitBash) commands </a>
 
 | №  | Task title EN                                                                           | Task title RU                                                                      | Title task FI |
 |----|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------|
@@ -34,7 +34,7 @@
 
 ### Solution of tasks / Решение задач / 
 
-### <a id="link1">1. Show the current directory / Посмотреть где я</a>
+### <a id="link1">1. Show the current directory / Посмотреть где я</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -42,16 +42,16 @@ Input:
 ````
 Output:
 ````
-    .... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (master)
-    $ pwd    
-    /c/var/1a-testing-course/linux-terminal-gitbash-commands
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (master)
+$ pwd    
+/c/var/1a-testing-course/linux-terminal-gitbash-commands
 ````
-### <a id="link2">2. Create a folder | Создать папку</a>
+### <a id="link2">2. Create a folder | Создать папку</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
-    mkdir screenshots
-    ls
+mkdir screenshots
+ls
 ````
 
 Result
@@ -60,145 +60,143 @@ Result
 
 Output:
 ````
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-2)
-    $ mkdir screenshots 
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-2)
-    $ ls
-    README.md  screenshots
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-2)
+$ mkdir screenshots 
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-2)
+$ ls
+README.md  screenshots
 ````
 
-### <a id="link3">3. Enter folder | Зайти в папку</a>
-
-Input:
-```` bash
-    pwd
-    cd screenshots
-    pwd
-````
-Output:
-````
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-3)
-    $ pwd 
-    /c/var/1a-testing-course/linux-terminal-gitbash-commands
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-3)
-    $ cd screenshots
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots (task-3)
-    $ pwd
-    /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots
-````
-
-### <a id="link4">4. Create 3 folders | Создать 3 папки</a>
+### <a id="link3">3. Enter folder | Зайти в папку</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
-    mkdir task_4
-    cd task_4 
-    mkdir cild_dir_1 cild_dir_2 cild_dir_3
-    cd ..
+pwd
+cd screenshots
+pwd
 ````
 Output:
 ````
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-4)
-    $ mkdir cild_dir_1 cild_dir_2 cild_dir_3
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-4)
-    $ mkdir task_4
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-4)
-    $ cd task_4
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
-    $ mkdir cild_dir_1 cild_dir_2 cild_dir_3
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
-    $ ls
-    cild_dir_1  cild_dir_2  cild_dir_3
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-3)
+$ pwd 
+/c/var/1a-testing-course/linux-terminal-gitbash-commands
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-3)
+$ cd screenshots
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots (task-3)
+$ pwd
+/c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots
+````
+
+### <a id="link4">4. Create 3 folders | Создать 3 папки</a>  |  [Back to list](#back_to_list)
+
+Input:
+```` bash
+mkdir task_4
+cd task_4 
+mkdir cild_dir_1 cild_dir_2 cild_dir_3
+cd ..
+````
+Output:
+````
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-4)
+$ mkdir cild_dir_1 cild_dir_2 cild_dir_3
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-4)
+$ mkdir task_4
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-4)
+$ cd task_4
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
+$ mkdir cild_dir_1 cild_dir_2 cild_dir_3
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
+$ ls
+cild_dir_1  cild_dir_2  cild_dir_3
 ````
 #### Some examples extra:
 
 Input:
 ```` bash
-    cd task_4
-    mkdir extra_examples
-    cd extra_examples
-    mkdir dir{1..5}
-    ls 
-    mkdir {1,2,3}
-    ls
-    mkdir test{01..5}  
-    ls  
-    mkdir -p dir_parent/cild_dir_{1..3}
-    ls
-    cd dir_parent
-    ls
-    cd ..
-    mkdir -p `date '+%y%m%d'`/{1,2,3}
-    ls
-    cd `date '+%y%m%d'`
-    ls
-    cd ..
+cd task_4
+mkdir extra_examples
+cd extra_examples
+mkdir dir{1..5}
+ls 
+mkdir {1,2,3}
+ls
+mkdir test{01..5}  
+ls  
+mkdir -p dir_parent/cild_dir_{1..3}
+ls
+cd dir_parent
+ls
+cd ..
+mkdir -p `date '+%y%m%d'`/{1,2,3}
+ls
+cd `date '+%y%m%d'`
+ls
+cd ..
 ````
 Output:
 ````
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
-    $ cd task_4
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
-    $ mkdir extra_examples
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
-    $ cd extra_examples
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
-    $ mkdir dir{1..5}
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
-    $ ls
-    dir1  dir2  dir3  dir4  dir5
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
-    $ mkdir {1,2,3}
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
-    $ ls
-    1  2  3  dir1  dir2  dir3  dir4  dir5
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
-    $ mkdir test{01..5}
-    
-    $ cd dir_parent
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/dir_parent (task-4)
-    $ ls
-    cild_dir_1  cild_dir_2  cild_dir_3
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/dir_parent (task-4)
-    $ cd ..
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
-    $ mkdir -p `date '+%y%m%d'`/{1,2,3}
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
-    $ ls
-    1  2  230801  3  dir1  dir2  dir3  dir4  dir5  dir_parent  test01  test02  test03  test04  test05
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
-    $ cd `date '+%y%m%d'`
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/230801 (task-4)
-    $ ls
-    1  2  3
-    
-    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/230801 (task-4)
-    $ cd ..
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
+$ cd task_4
 
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
+$ mkdir extra_examples
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-4)
+$ cd extra_examples
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+$ mkdir dir{1..5}
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+$ ls
+dir1  dir2  dir3  dir4  dir5
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+$ mkdir {1,2,3}
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+$ ls
+1  2  3  dir1  dir2  dir3  dir4  dir5
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+$ mkdir test{01..5}
+
+$ cd dir_parent
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/dir_parent (task-4)
+$ ls
+cild_dir_1  cild_dir_2  cild_dir_3
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/dir_parent (task-4)
+$ cd ..
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+$ mkdir -p `date '+%y%m%d'`/{1,2,3}
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+$ ls
+1  2  230801  3  dir1  dir2  dir3  dir4  dir5  dir_parent  test01  test02  test03  test04  test05
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-4)
+$ cd `date '+%y%m%d'`
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/230801 (task-4)
+$ ls
+1  2  3
+
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/230801 (task-4)
+$ cd ..
 ````
 
-### <a id="link5">5. Go to any folder</a>
+### <a id="link5">5. Go to any folder</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -231,7 +229,7 @@ $ pwd
 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_5/task_5/cild_dir_task_2    
 ````
 
-### <a id="link6">6. Create 5 files (3 txt, 2 json)</a>
+### <a id="link6">6. Create 5 files (3 txt, 2 json)</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -270,7 +268,7 @@ $ tree
 ````
 
 
-### <a id="link7">7. Create 3 folders</a>
+### <a id="link7">7. Create 3 folders</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -309,7 +307,7 @@ $ tree
 3 directories, 9 files
 ````
 
-### <a id="link8">8. List the contents of a folder</a>
+### <a id="link8">8. List the contents of a folder</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -351,7 +349,7 @@ $ tree
 
 ````
 
-### <a id="link9">9. Open any txt file</a>
+### <a id="link9">9. Open any txt file</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -372,7 +370,7 @@ $ cat task_9.txt
 lorem ipsum
 ````
 
-### <a id="link10">10. Write something there, any text.</a>
+### <a id="link10">10. Write something there, any text.</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -388,7 +386,7 @@ $ cat > task_10.txt
 $ echo 'any text lorem ipsum' > task_10.txt 
 ````
 
-### <a id="link11">11. Save and exit</a>
+### <a id="link11">11. Save and exit</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -398,7 +396,7 @@ Output:
 ````
 ````
 
-### <a id="link12">12. Exit folder one level up</a>
+### <a id="link12">12. Exit folder one level up</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -412,7 +410,7 @@ $     cd ..
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands
 ````
 
-### <a id="link13">13. Move any 2 files you created to any other folder.</a>
+### <a id="link13">13. Move any 2 files you created to any other folder.</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -457,7 +455,7 @@ $ tree
 1 directory, 3 files
 ````
 
-### <a id="link14">14. Copy any 2 files you created to any other folder.</a>
+### <a id="link14">14. Copy any 2 files you created to any other folder.</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -488,7 +486,7 @@ $ ls
 README.md  file3.txt  file4.json  task_14
 ````
 
-### <a id="link15">15. Find a file by name</a>
+### <a id="link15">15. Find a file by name</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -505,7 +503,7 @@ $ find . -name 'file_name_2.txt'
 ./file_name_2.txt
 ````
 
-### <a id="link16">16. View content in real-time (grep command) and learn how it works.</a>
+### <a id="link16">16. View content in real-time (grep command) and learn how it works.</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -531,7 +529,7 @@ lorem ipsum error
 
 ````
 
-### <a id="link17">17. Output the first few lines from a text file</a>
+### <a id="link17">17. Output the first few lines from a text file</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -558,7 +556,7 @@ lorem ipsum error
   
 ````
 
-### <a id="link18">18. Output the last few lines from a text file</a>
+### <a id="link18">18. Output the last few lines from a text file</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -584,7 +582,7 @@ lorem ipsum lorem
 lorem ipsum error
 ````
 
-### <a id="link19">19. View the contents of a long file (the less command) and learn how it works.</a>
+### <a id="link19">19. View the contents of a long file (the less command) and learn how it works.</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -610,7 +608,7 @@ lorem_ipsum.txt (END)
 ````
 
 ````
-### <a id="link20">20. Display date and time</a>
+### <a id="link20">20. Display date and time</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
@@ -624,7 +622,7 @@ Wed Aug  2 22:05:35 FLEDT 2023
 ````
 
 
-### <a id="link21">21. Send an http request to the server. http://162.55.220.72:5006/terminal-hw-request</a>
+### <a id="link21">21. Send an http request to the server. http://162.55.220.72:5006/terminal-hw-request</a>  |  [Back to list](#back_to_list)
 
 Input:
 ````bash
@@ -655,30 +653,75 @@ $ curl "http://162.55.220.72:5005/get_method?name=maksim&age=33"
 ]
 ````
 
-### <a id="link22">22. Write a script that will automatically execute the points 3, 4, 5, 6, 7, 8, 13</a>
+### <a id="link22">22. Write a script that will automatically execute the points 3, 4, 5, 6, 7, 8, 13</a>  |  [Back to list](#back_to_list)
 
 Input:
 ```` bash
 ./myscript.sh
 ````
+
+Script
+```
+#!/bin/bash
+
+mkdir task_22
+
+echo "Item 3: Enter folder | Зайти в папку"
+cd task_22
+
+echo "Item 4: Create 3 folders"
+mkdir folder_{1..3}
+
+echo "Item 5: Go to any folder"
+cd folder_1
+
+echo "Item 6: Create 5 files (3 txt, 2 json)"
+touch file_1.txt file_2.txt file_3.txt file_4.json file_5.json
+
+echo "Item 7: Create 3 folders"
+mkdir folder_4 folder_5 folder_6
+
+echo "Item 8: List the contents of a folder"
+ls
+tree
+
+echo "Item 13: Move any 2 files you created to any other folder."
+mv file_1.txt file_2.txt folder_4/
+tree
+```
+
 Output:
 ````
-MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_22 (dev)
-$ ./myscript.sh                                                                                    
-mkdir: cannot create directory 'task_22': File exists
-Item 3: Enter folder | Зайти в папку                 
-Item 4: Create 3 folders                             
-mkdir: cannot create directory 'folder_1': File exists
-mkdir: cannot create directory 'folder_2': File exists
-mkdir: cannot create directory 'folder_3': File exists
-Item 5: Go to any folder                              
+... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_22 (dev)
+$ /bin/bash C:/var/1a-testing-course/linux-terminal-gitbash-commands/task_22/myscript.sh           
+Item 3: Enter folder | Зайти в папку
+Item 4: Create 3 folders
+Item 5: Go to any folder
 Item 6: Create 5 files (3 txt, 2 json)
 Item 7: Create 3 folders
-mkdir: cannot create directory 'folder_4': File exists
-mkdir: cannot create directory 'folder_5': File exists
-mkdir: cannot create directory 'folder_6': File exists
-Item 8: List the contents of a folder                 
+Item 8: List the contents of a folder
 file_1.txt  file_2.txt  file_3.txt  file_4.json  file_5.json  folder_4  folder_5  folder_6
-Item 13: Move any 2 files you created to any other folder.
+.
+|-- file_1.txt 
+|-- file_2.txt 
+|-- file_3.txt 
+|-- file_4.json
+|-- file_5.json
+|-- folder_4   
+|-- folder_5   
+`-- folder_6   
 
+3 directories, 5 files                                    
+Item 13: Move any 2 files you created to any other folder.
+.
+|-- file_3.txt 
+|-- file_4.json
+|-- file_5.json
+|-- folder_4
+|   |-- file_1.txt
+|   `-- file_2.txt
+|-- folder_5
+`-- folder_6
+
+3 directories, 5 files
 ````
