@@ -614,7 +614,6 @@ What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the..
 lorem_ipsum.txt (END)
 ````
 
-````
 ### <a id="link20">20. Display date and time</a>  |  [Back to list](#back_to_list)
 
 Input:
