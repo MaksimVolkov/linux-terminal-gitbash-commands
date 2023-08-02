@@ -205,11 +205,51 @@ Output:
 
 Input:
 ```` bash
-    
+    cd /c/var/1a-testing-course/linux-terminal-gitbash-commands/
+    ls
+    cd /c/var/1a-testing-course/linux-terminal-gitbash-commands/
 ````
 Output:
 ````
+    ... MINGW64 /c/var/1a-testing-course
+    $ cd /c/var/1a-testing-course/linux-terminal-gitbash-commands/
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-5)
+    $ ls
+    README.md  screenshots  task_4
 
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-5)
+    $ cd screenshots/
+        
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots (task-5)
+    $ cd ..
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/ (task-5)
+    $ cd task_4
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-5)
+    $ ls
+    cild_dir_1  cild_dir_2  cild_dir_3  extra_examples
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4 (task-5)
+    $ cd extra_examples
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-5)
+    $ ls
+    1  2  230801  3  dir1  dir2  dir3  dir4  dir5  dir_parent  test01  test02  test03  test04  test05
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples (task-5)
+    $ cd dir_parent
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/dir_parent (task-5)
+    $ ls
+    cild_dir_1  cild_dir_2  cild_dir_3
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/dir_parent (task-5)
+    $ cd /c/var/1a-testing-course/linux-terminal-gitbash-commands/
+    
+    ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands
+    $ 
 ````
 
 ### <a id="link6">6. Create 5 files (3 txt, 2 json) | Создать 5 файлов (3 txt, 2 json)</a>
