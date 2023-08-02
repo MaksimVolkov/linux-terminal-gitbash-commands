@@ -2,28 +2,28 @@
 
 ### Linux terminal (GitBash) commands
 
-| №  | Task title EN                                                                       | Task title RU                                                                      | Title task FI |
-|----|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------|
-| 1  | [Show current directory](#link1)                                                    | Посмотреть где я                                                                   |               |
-| 2  | [Create a folder](#link2)                                                           | Создать папку                                                                      |               |
-| 3  | [Enter folder](#link3)                                                              | Зайти в папку                                                                      |               |
-| 4  | [Create 3 folders](#link4)                                                          | Создать 3 папки                                                                    |               |
-| 5  | [Go to any folder](#link5)                                                          | Зайти в любоую папку                                                               |               |   
-| 6  | [Create 5 files (3 txt, 2 json)](#link6)                                            | Создать 5 файлов (3 txt, 2 json)                                                   |               |
-| 7  | [Create 3 folders](#link7)                                                          | Создать 3 папки                                                                    |               |
-| 8  | [List the contents of a folder](#link8)                                             | Вывести список содержимого папки                                                   |               |
-| 9  | [Open any txt file](#link9)                                                         | + Открыть любой txt файл                                                           |               |
-| 10 | [Write something there, any text.](#link10)                                         | + написать туда что-нибудь, любой текст.                                           |               |
-| 11 | [Save and exit](#link11)                                                            | + сохранить и выйти.                                                               |               |
-| 12 | [Exit folder one level up](#link12)                                                 | Выйти из папки на уровень выше                                                     |               |
-| 13 | [Move any 2 files you created to any other folder.](#link13)                        | переместить любые 2 файла, которые вы создали, в любую другую папку.               |               |
-| 14 | [Copy any 2 files you created to any other folder.](#link14)                        | скопировать любые 2 файла, которые вы создали, в любую другую папку.               |               |
-| 15 | [Find file by name](#link15)                                                        | Найти файл по имени                                                                |               |
-| 16 | [View content in real time (grep command) learn how it works.](#link16 )            | просмотреть содержимое в реальном времени (команда grep) изучите как она работает. |               |
-| 17 | [Output the first few lines from a text file](#link17 )                             | вывести несколько первых строк из текстового файла                                 |               |
-| 18 | [Output the last few lines from a text file](#link18 )                              | вывести несколько последних строк из текстового файла                              |               |
-| 19 | [View the contents of a long file (the less command) learn how it works.](#link19 ) | просмотреть содержимое длинного файла (команда less) изучите как она работает.     |               |
-| 20 | [Display date and time](#link20 )                                                   | вывести дату и время                                                               |               |
+| №  | Task title EN                                                                           | Task title RU                                                                      | Title task FI |
+|----|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------|
+| 1  | [Show the current directory](#link1)                                                    | Посмотреть где я                                                                   |               |
+| 2  | [Create a folder](#link2)                                                               | Создать папку                                                                      |               |
+| 3  | [Enter folder](#link3)                                                                  | Зайти в папку                                                                      |               |
+| 4  | [Create 3 folders](#link4)                                                              | Создать 3 папки                                                                    |               |
+| 5  | [Go to any folder](#link5)                                                              | Зайти в любоую папку                                                               |               |   
+| 6  | [Create 5 files (3 txt, 2 json)](#link6)                                                | Создать 5 файлов (3 txt, 2 json)                                                   |               |
+| 7  | [Create 3 folders](#link7)                                                              | Создать 3 папки                                                                    |               |
+| 8  | [List the contents of a folder](#link8)                                                 | Вывести список содержимого папки                                                   |               |
+| 9  | [Open any txt file](#link9)                                                             | + Открыть любой txt файл                                                           |               |
+| 10 | [Write something there, any text.](#link10)                                             | + написать туда что-нибудь, любой текст.                                           |               |
+| 11 | [Save and exit](#link11)                                                                | + сохранить и выйти.                                                               |               |
+| 12 | [Exit folder one level up](#link12)                                                     | Выйти из папки на уровень выше                                                     |               |
+| 13 | [Move any 2 files you created to any other folder.](#link13)                            | переместить любые 2 файла, которые вы создали, в любую другую папку.               |               |
+| 14 | [Copy any 2 files you created to any other folder.](#link14)                            | скопировать любые 2 файла, которые вы создали, в любую другую папку.               |               |
+| 15 | [Find a file by name](#link15)                                                          | Найти файл по имени                                                                |               |
+| 16 | [View content in real-time (grep command) and learn how it works.](#link16 )            | просмотреть содержимое в реальном времени (команда grep) изучите как она работает. |               |
+| 17 | [Output the first few lines from a text file](#link17 )                                 | вывести несколько первых строк из текстового файла                                 |               |
+| 18 | [Output the last few lines from a text file](#link18 )                                  | вывести несколько последних строк из текстового файла                              |               |
+| 19 | [View the contents of a long file (the less command) and learn how it works.](#link19 ) | просмотреть содержимое длинного файла (команда less) изучите как она работает.     |               |
+| 20 | [Display date and time](#link20 )                                                       | вывести дату и время                                                               |               |
 
 ### Task of increased complexity / Задание повышеной сложности * /
 
@@ -34,7 +34,7 @@
 
 ### Solution of tasks / Решение задач / 
 
-### <a id="link1">1. Show current directory / Посмотреть где я</a>
+### <a id="link1">1. Show the current directory / Посмотреть где я</a>
 
 Input:
 ```` bash
@@ -53,13 +53,10 @@ Input:
     mkdir screenshots
     ls
 ````
-Step one
-
-![screenshots](screenshots/Screenshot_0.jpg)
 
 Result
 
-![screenshots](screenshots/Screenshot_1.jpg)
+![screenshots](task_2/screenshots/Screenshot_1.jpg)
 
 Output:
 ````
@@ -349,7 +346,7 @@ Output:
 ````
 
 ````
-### <a id="link15">15. Find file by name | Найти файл по имени</a>
+### <a id="link15">15. Find a file by name | Найти файл по имени</a>
 
 Input:
 ```` bash
@@ -359,7 +356,7 @@ Output:
 ````
 
 ````
-### <a id="link16">16. View content in real time (grep command) learn how it works. | просмотреть содержимое в реальном времени (команда grep) изучите как она работает.</a>
+### <a id="link16">16. View content in real-time (grep command) and learn how it works. | просмотреть содержимое в реальном времени (команда grep) изучите как она работает.</a>
 
 Input:
 ```` bash
@@ -389,7 +386,7 @@ Output:
 ````
 
 ````
-### <a id="link19">19. View the contents of a long file (the less command) learn how it works. | просмотреть содержимое длинного файла (команда less) изучите как она работает.</a>
+### <a id="link19">19. View the contents of a long file (the less command) and learn how it works. | просмотреть содержимое длинного файла (команда less) изучите как она работает.</a>
 
 Input:
 ```` bash
