@@ -406,12 +406,12 @@ Output:
 
 Input:
 ```` bash
-    cd ..
+cd ..
 ````
 Output:
 ````
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_12 (dev)
-$     cd ..                                                                                        
+$ cd ..                                                                                        
 
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands
 ````
@@ -624,7 +624,7 @@ date
 Output:
 ````
 ... MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_20 (dev)
-$     date                                                                                         
+$ date                                                                                         
 Wed Aug  2 22:05:35 FLEDT 2023
 ````
 
