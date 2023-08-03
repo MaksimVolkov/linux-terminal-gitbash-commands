@@ -202,6 +202,12 @@ $ cd ..
 
 ### <a id="link5">5. Go to any folder</a>  |  [Back to list](#back_to_list)
 
+#### Description
+
+> В Git Bash команда `tree` не доступна, но возможно это настроить. скачать с сайта `Zip` файл `Binaries`: https://gnuwin32.sourceforge.net/packages/tree.htm  
+> в архиве находится директорию `bin` в ней есть файл `tree.exe`, поместить его в директорию `...\Git\usr\bin` обычно
+> она находится по адресу `C:\Program Files\Git\usr\bin`. После перезпуска `Git Bash` команда `tree` станет доступна.
+
 Input:
 ```` bash
 mkdir -p task_5/cild_dir_task_{1..3}
