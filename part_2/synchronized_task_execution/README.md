@@ -9,7 +9,9 @@ Script
 ``` bash
 cat > synchronized_task_execution.sh << EOF
 #!/bin/bash
-echo ""
+echo "Synchronized Task Execution"
+../task_.sh
+for
 EOF
 ```
 
