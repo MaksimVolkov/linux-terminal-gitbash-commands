@@ -57,7 +57,7 @@ ls
 
 Result
 
-![screenshots](task_2/screenshots/Screenshot_1.jpg)
+![screenshots](part_1/task_2/screenshots/Screenshot_1.jpg)
 
 Output:
 ````
