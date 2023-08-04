@@ -5,12 +5,15 @@ Input:
 
 ```
 
-Script
-```
-
-```
-
 Output:
 ```
 
+```
+
+Script
+``` bash
+cat > task_.sh << EOF
+#!/bin/bash
+echo ""
+EOF
 ```
