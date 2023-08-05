@@ -14,7 +14,7 @@ $ pwd
 
 Script
 ``` bash
-cat > task_.sh << EOF
+cat > task_4.sh << EOF
 #!/bin/bash
 echo "4. View the current directory"
 pwd

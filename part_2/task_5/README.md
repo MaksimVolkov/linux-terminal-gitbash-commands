@@ -2,7 +2,7 @@
 
 Input:
 ``` bash
-
+touch tf_1.txt
 ```
 
 Output:
@@ -12,8 +12,9 @@ Output:
 
 Script
 ``` bash
-cat > task_.sh << EOF
+cat > task_5.sh << EOF
 #!/bin/bash
-echo ""
+echo "5. Inside dir_1, create an empty text file tf_1.txt"
+touch tf_1.txt
 EOF
 ```

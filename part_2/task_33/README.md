@@ -12,7 +12,7 @@ Output:
 
 Script
 ``` bash
-cat > task_.sh << EOF
+cat > task_33.sh << EOF
 #!/bin/bash
 echo ""
 EOF
