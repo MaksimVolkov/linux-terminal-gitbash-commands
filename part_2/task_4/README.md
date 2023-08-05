@@ -2,18 +2,21 @@
 
 Input:
 ``` bash
-
+pwd
 ```
 
 Output:
 ```
-
+MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/task_4 (dev)
+$ pwd
+/c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/task_4 
 ```
 
 Script
 ``` bash
 cat > task_.sh << EOF
 #!/bin/bash
-echo ""
+echo "4. View the current directory"
+pwd
 EOF
 ```
