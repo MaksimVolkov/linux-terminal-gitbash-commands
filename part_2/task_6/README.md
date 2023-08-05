@@ -2,7 +2,11 @@
 
 Input:
 ``` bash
-
+cat > tf_2.txt << EOF
+- the first 1
+- the second 2
+- the third 3
+EOF
 ```
 
 Output:
@@ -12,8 +16,13 @@ Output:
 
 Script
 ``` bash
-cat > task_.sh << EOF
+cat > task_6.sh << EOF
 #!/bin/bash
-echo ""
+echo "6. While inside dir_1, use the cat command to create a text file tf_2.txt with the following lines: - the first 1 - the second 2 - the third"
+cat > tf_2.txt << EOF2
+- the first 1
+- the second 2
+- the third 3
+EOF2
 EOF
 ```
