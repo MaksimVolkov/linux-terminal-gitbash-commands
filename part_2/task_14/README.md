@@ -2,7 +2,12 @@
 
 Input:
 ``` bash
-
+for i in {1..15}; do
+    if [ $i == 1 ]; then
+        touch tf_4.txt
+    fi
+    echo "$i string" >> tf_4.txt
+done
 ```
 
 Output:
@@ -12,8 +17,14 @@ Output:
 
 Script
 ``` bash
-cat > task_14.sh << EOF
+cat > task_15.sh << EOF
 #!/bin/bash
-echo ""
+echo "14. Create a text file tf_4.txt with 15 lines."
+for i in {1..15}; do
+    if [ $i == 1 ]; then
+        touch tf_4.txt
+    fi
+    echo "$i string" >> tf_4.txt
+done
 EOF
 ```

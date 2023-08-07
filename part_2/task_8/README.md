@@ -2,7 +2,9 @@
 
 Input:
 ``` bash
-
+cat >> tf_3.txt << EOF 
+the second 2
+EOF
 ```
 
 Output:
