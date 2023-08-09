@@ -1,5 +1,5 @@
-| №  | Title EN | Title RU | answer                                                                                                                                                  |
-|----|----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| №  | Title EN | Title RU | answer |
+|----|----------|----------|--------|
 | 1  | [Create a folder dir_1](task_1) | Сделать папку dir_1 | mkdir dir_1                                                                                                                                             |
 | 2  | [Change directory to dir_1](task_2) | Зайти в папку dir_1 | cd dir_1                                                                                                                                                |
 | 3  | [Create a folder inner_dir_1](task_3) | Создать папку inner_dir_1 | mkdir inner_dir_1                                                                                                                                       |
@@ -17,7 +17,7 @@
 | 15 | [Create a text file tF_5.txt with 13 lines.](task_15) | Сделать текстовый файл tF_5.txt в котором будет 13 строк. | for i in {1..13}; do    if [ $i == 1 ]; then     touch    tf_5.txt    fi     echo "$i string" >> tf_5.txt done                                          |
 | 16 | [List all files in the current folder.](task_16) | Вывести список всех файлов в папке. | ls                                                                                                                                                      |
 | 17 | [Go back to the parent directory (from inner_dir_1 to dir_1)](task_17) | Выйти из папки inner_dir_1 | cd ..                                                                                                                                                   |
-| 18 | [Display the contents of the file tf_3.txt in the terminal.](task_18) | Вывести содержимое файла tf_3.txt в терминал. | ./inner_dir_1/tf_3.txt      |
+| 18 | [Display the contents of the file tf_3.txt in the terminal.](task_18) | Вывести содержимое файла tf_3.txt в терминал. | ./inner_dir_1/tf_3.txt                                                                                                                                  |
 | 19 | [Find the path to the file tf_4.txt](task_19) | Найти путь к файлу tf_4.txt |                                                                                                                                                         |
 | 20 | [Clear the contents of the file tf_4.txt without deleting the file itself.](task_20) | Отчистить файл tf_4.txt от содержимого без удаления самого файла. |                                                                                                                                                         |
 | 21 | [Find the paths of files with 'tf' in the name.](task_21) | Найти путь к файлам у которых есть 'tf' в названии. |                                                                                                                                                         |
