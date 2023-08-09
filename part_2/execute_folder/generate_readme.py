@@ -9,7 +9,7 @@ with open(data_file, "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Создание файла README.md и запись заголовка таблицы
-with open("README.md", "w", encoding="utf-8") as f:
+with open("../README.md", "w", encoding="utf-8") as f:
 
     f.write(f"# <a id='back_to_list'>Linux terminal (GitBash) commands part 2</a>")
     f.write("\n")
