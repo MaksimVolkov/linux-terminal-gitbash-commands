@@ -1,0 +1,162 @@
+{
+  "task_1": {
+    "input": "mkdir dir_1",
+    "output":""
+  },
+  "task_2": {
+    "input": "cd dir_1",
+    "output": ""
+  },
+  "task_3": {
+    "input": "mkdir -p inner_dir_1",
+    "output": ""
+  },
+  "task_4": {
+    "input": "pwd",
+    "output": ""
+  },
+  "task_5": {
+    "input": "touch tf_1.txt",
+    "output": ""
+  },
+  "task_6": {
+    "input": "cat > tf_2.txt << EOF\n  - the first 1\n  - the second 2\n  - the third 3\nEOF",
+    "output": ""
+  },
+  "task_7": {
+    "input": "cd inner_dir_1",
+    "output": ""
+  },
+  "task_8": {
+    "input": "cat > tf_3.txt << EOF\nfLorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean commodo ligula eget dolor.\nCum sociis natoque penatibus et\nEOF",
+    "output": ""
+  },
+  "task_9": {
+    "input": "cat >> tf_3.txt << EOF\nthe second 2\nEOF",
+    "output": ""
+  },
+  "task_10": {
+    "input": "cat >> tf_3.txt << EOF\nthe sec 2\nEOF",
+    "output": ""
+  },
+  "task_11": {
+    "input": "cat >> tf_2.txt << EOF\nthe sec 3\nEOF",
+    "output": ""
+  },
+  "task_12": {
+    "input": "cat >> tf_3.txt << EOF\nthe SeCoNd 2\nEOF",
+    "output": ""
+  },
+  "task_13": {
+    "input": "cat >> tf_2.txt << EOF\nthe seConD 2\nEOF",
+    "output": ""
+  },
+  "task_14": {
+    "input": "for i in {1..15}; do\n  if [ $i == 1 ]; then\n    touch tf_4.txt\n  fi\n  echo '$i string' >> tf_4.txt\ndone",
+    "output": ""
+  },
+  "task_15": {
+    "input": "for i in {1..13}; do\n  if [ $i == 1 ]; then\n    touch tF_5.txt\n  fi\n  echo '$i string' >> tF_5.txt\ndone",
+    "output": ""
+  },
+  "task_16": {
+    "input": "ls",
+    "output": ""
+  },
+  "task_17": {
+    "input": "cd ..",
+    "output": ""
+  },
+  "task_18": {
+    "input": "cat inner_dir_1/tf_3.txt",
+    "output": ""
+  },
+  "task_19": {
+    "input": "echo 'find $PWD -type f -name tf_4.txt'\nfind $PWD -type f -name tf_4.txt\necho 'realpath tf_4.txt'\nrealpath tf_4.txt\necho ' readlink -f tf_4.txt'\nreadlink -f tf_4.txt",
+    "output": ""
+  },
+  "task_20": {
+    "input": "truncate -s 0 tf_4.txt",
+    "output": ""
+  },
+  "task_21": {
+    "input": "find . -type f -name '*tf*'",
+    "output": ""
+  },
+  "task_22": {
+    "input": "find . -type f -iname '*tf*'",
+    "output": ""
+  },
+  "task_23": {
+    "input": "grep -r 'sec' *",
+    "output": ""
+  },
+  "task_24": {
+    "input": "grep -ri 'sec' *",
+    "output": ""
+  },
+  "task_25": {
+    "input": "grep -rw 'sec' *",
+    "output": ""
+  },
+  "task_26": {
+    "input": "find . -type f -exec grep -iw 'sec' {} +",
+    "output": ""
+  },
+  "task_27": {
+    "input": "grep -r 'second' .",
+    "output": ""
+  },
+  "task_28": {
+    "input": "grep -ri 'second' .",
+    "output": ""
+  },
+  "task_29": {
+    "input": "grep -r 'second' *",
+    "output": ""
+  },
+  "task_30": {
+    "input": "grep -rl 'second' *",
+    "output": ""
+  },
+  "task_31": {
+    "input": "grep -r -v 'second' .",
+    "output": ""
+  },
+  "task_32": {
+    "input": "find . -type f -exec grep -L 'second' {} \\;",
+    "output": ""
+  },
+  "task_33": {
+    "input": "find . -type f -exec bash -c 'echo 'File: $1'; tail -n 4 '$1'' _ {} \\;\necho 'var. 2'\nfind . -type f -name '*.txt' -exec tail -n 4 {} \\; -quit",
+    "output": ""
+  },
+  "task_34": {
+    "input": "find . -type f -exec bash -c 'echo 'File: $1'; head -n 4 '$1'' _ {} \\;\necho 'var. 2'\nfind . -type f -name '*.txt' -exec head -n 4 {} \\; -quit",
+    "output": ""
+  },
+  "task_35": {
+    "input": "mkdir new_folder && echo 'text file with content!' > new_folder/new_file.txt",
+    "output": ""
+  },
+  "task_36": {
+    "input": "mkdir -p move_dir && grep -rl 'sec' | xargs -I {} mv {} move_dir/",
+    "output": ""
+  },
+  "task_37": {
+    "input": "mkdir -p cp_dir && grep -rl 'sec' | xargs -I {} cp {} cp_dir/",
+    "output": ""
+  },
+  "task_38": {
+    "input": "find . -type f -name '*.txt' -exec grep -H 'sec' {} + | tee new_sec_file.txt",
+    "output": ""
+  },
+  "task_39": {
+    "input": "grep -rlZ 'sec' | xargs -0 -t -I {} rm -f {}",
+    "output": ""
+  },
+  "task_40": {
+    "input": "echo 'Good job!!',",
+    "output": ""
+  }
+}

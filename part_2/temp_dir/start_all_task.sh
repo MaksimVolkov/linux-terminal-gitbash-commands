@@ -35,7 +35,8 @@ rm -rf dir_1
 # 1 Сделать папку dir_1
 echo -e "${YELLOW}# 1 Сделать папку dir_1${NC}"
 echo "$ mkdir dir_1"
-check_command mkdir -p dir_1
+check_command mkdir dir_1
+ls -la
 
 # 2 Зайти в папку dir_1
 echo -e "${YELLOW}# 2 Зайти в папку dir_1${NC}"
@@ -45,7 +46,7 @@ check_command cd dir_1
 # 3 Создать папку inner_dir_1
 echo -e "${YELLOW}# 3 Создать папку inner_dir_1${NC}"
 echo "$ mkdir inner_dir_1"
-check_command mkdir -p inner_dir_1
+check_command mkdir inner_dir_1
 
 # 4 Посмотреть где ты находишься
 echo -e "${YELLOW}# 4 Посмотреть где ты находишься${NC}"
@@ -206,7 +207,7 @@ check_command readlink -f tf_4.txt
 
 # 20. Очистить файл tf_4.txt от содержимого без удаления самого файла.
 echo -e "${YELLOW}# 20. Очистить файл tf_4.txt от содержимого без удаления самого файла."${NC}
-echo "truncate -s 0 tf_4.txt or > tf_4.txt"
+echo "truncate -s 0 tf_4.txt or > tf_4.txt, better truncate"
 check_command truncate -s 0 tf_4.txt
 
 # 21. Найти путь к файлам у которых есть  'tf' в названии.
@@ -241,7 +242,7 @@ check_command grep -rw "sec" *
 
 # 26. Найти строки в файлах где есть только комбинация букв 'sec' в любом регистре в текущей папке
 echo -e "${YELLOW}# 26. Найти строки в файлах где есть только комбинация букв 'sec' в любом регистре в текущей папке"${NC}
-echo "grep -iw 'sec' *"
+echo "find . -type f -exec grep -iw 'sec' {} +"
 check_command find . -type f -exec grep -iw 'sec' {} +
 
 
@@ -260,13 +261,13 @@ check_command grep -ri 'second' .
 # 29. Найти строки в файлах где есть комбинация букв 'second' во всех папках ниже уровнем
 echo -e "${YELLOW}# 29. Найти строки в файлах где есть комбинация букв 'second' во всех папках ниже уровнем"${NC}
 echo "grep -r 'second' *"
-check_command grep -r "second" *
+check_command grep -r 'second' *
 
 
 # 30. Найти только путь и название файла в строках которых есть комбинация букв 'second' в текущей папке
 echo -e "${YELLOW}# 30. Найти только путь и название файла в строках которых есть комбинация букв 'second' в текущей папке"${NC}
 echo "grep -rl 'second' *"
-check_command grep -rl "second" *
+check_command grep -rl 'second' *
 
 
 # 31. Найти все строки во всех файлах где нет комбинации 'second'
@@ -282,13 +283,17 @@ check_command find . -type f -exec grep -L 'second' {} \;
 
 # 33. Вывести в терминал 4 последних строк любого текстового файла
 echo -e "${YELLOW}# 33. Вывести в терминал 4 последних строк любого текстового файла"${NC}
-echo "tail -n 4 filename.txt"
-check_command find . -type f -exec bash -c 'if [ $(wc -l < "$1") -gt 4 ]; then echo "File: $1"; tail -n 4 "$1"; fi' _ {} \;
+echo "find . -type f -exec bash -c 'echo "File: $1"; tail -n 4 "$1"' _ {} \;"
+check_command find . -type f -exec bash -c 'echo "File: $1"; tail -n 4 "$1"' _ {} \;
+echo "var. 2"
+find . -type f -name "*.txt" -exec tail -n 4 {} \; -quit
 
 # 34. Вывести в терминал 4 первые строки любого текстового файла.
 echo -e "${YELLOW}# 34. Вывести в терминал 4 первые строки любого текстового файла."${NC}
-echo "head -n 4 filename.txt"
-check_command find . -type f -exec bash -c 'if [ $(wc -l < "$1") -gt 4 ]; then echo "File: $1"; head -n 4 "$1"; fi' _ {} \;
+echo "find . -type f -exec bash -c 'echo "File: $1"; head -n 4 "$1"' _ {} \;"
+check_command find . -type f -exec bash -c 'echo "File: $1"; head -n 4 "$1"' _ {} \;
+echo "var. 2"
+find . -type f -name "*.txt" -exec head -n 4 {} \; -quit
 
 # 35. Команда в одну строку. Создать папку и создать текстовый файл с содержиммым.
 echo -e "${YELLOW}# 35. Команда в одну строку. Создать папку и создать текстовый файл с содержиммым."${NC}
@@ -298,13 +303,13 @@ check_command mkdir new_folder && echo "text file with content!" > new_folder/ne
 
 # 36. Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово 'sec'
 echo -e "${YELLOW}# 36. Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово 'sec'"${NC}
-echo "grep -rl 'sec' | xargs -I {} mv {} new_dir/"
+echo "mkdir -p move_dir && grep -rl "sec" | xargs -I {} mv {} move_dir/"
 check_command mkdir -p move_dir && grep -rl "sec" | xargs -I {} mv {} move_dir/
 
 
 # 37. Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово 'sec'
 echo -e "${YELLOW}# 37. Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово 'sec'"${NC}
-echo "grep -rl 'sec' | xargs -I {} cp {} new_dir/"
+echo "mkdir -p cp_dir && grep -rl "sec" | xargs -I {} cp {} cp_dir/"
 check_command mkdir -p cp_dir && grep -rl "sec" | xargs -I {} cp {} cp_dir/
 
 
@@ -317,7 +322,7 @@ check_command find . -type f -name "*.txt" -exec grep -H "sec" {} + | tee new_se
 
 # 39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово 'sec'
 echo -e "${YELLOW}# 39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово 'sec'"${NC}
-echo "grep -rlZ 'sec' | xargs -0 -I {} rm -f {}"
+echo "grep -rlZ 'sec' | xargs -0 -t -I {} rm -f {}"
 grep -rlZ 'sec' | xargs -0 -t -I {} rm -f {}
 
 
