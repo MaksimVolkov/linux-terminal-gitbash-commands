@@ -1,0 +1,362 @@
+{
+  "task_1": {
+    "id": 1,
+    "task_name_en": "Create a folder dir_1",
+    "task_name_ru": "Сделать папку dir_1",
+    "input": "mkdir dir_1",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir (dev)\n$ mkdir dir_1 \n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir (dev)\n$ ls \ndir_1  start_all_task.sh\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_2": {
+    "id": 2,
+    "task_name_en": "Change directory to dir_1",
+    "task_name_ru": "Зайти в папку dir_1",
+    "input": "cd dir_1",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_3": {
+    "id": 3,
+    "task_name_en": "Create a folder inner_dir_1",
+    "task_name_ru": "Создать папку inner_dir_1",
+    "input": "mkdir -p inner_dir_1",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ mkdir -p inner_dir_1\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ ls\ninner_dir_1\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_4": {
+    "id": 4,
+    "task_name_en": "View the current directory",
+    "task_name_ru": "Посмотреть где ты находишься",
+    "input": "pwd",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ pwd\n/c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_5": {
+    "id": 5,
+    "task_name_en": "Inside dir_1, create an empty text file tf_1.txt",
+    "task_name_ru": "Находясь в папке dir_1 создать пустой текстовый файл tf_1.txt",
+    "input": "touch tf_1.txt",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ touch tf_1.txt\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ ls\n inner_dir_1  tf_1.txt\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_6": {
+    "id": 6,
+    "task_name_en": "While inside dir_1, use the cat command to create a text file tf_2.txt with the following lines: - the first 1, - the second 2, - the third 3",
+    "task_name_ru": "Находясь в папке dir_1 через команду cat создать текстовый файл tf_2.txt со следующими строками:- the first 1, - the second 2, - the third 3",
+    "input": "cat > tf_2.txt << EOF\n  - the first 1\n  - the second 2\n  - the third 3\nEOF",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ cat > tf_2.txt << EOF\n>   - the first 1\n>   - the second 2\n>   - the third 3\n> EOF\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ cat tf_2.txt\n  - the first 1\n  - the second 2\n  - the third 3\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_7": {
+    "id": 7,
+    "task_name_en": "Enter the inner_dir_1 folder",
+    "task_name_ru": "Зайти в папку inner_dir_1",
+    "input": "cd inner_dir_1",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_8": {
+    "id": 8,
+    "task_name_en": "Use cat to create a text file tf_3.txt with any lines",
+    "task_name_ru": "Через cat сделать текстовый файл tf_3.txt c любыми строками",
+    "input": "cat > tf_3.txt << EOF\nfLorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean commodo ligula eget dolor.\nCum sociis natoque penatibus et\nEOF",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat > tf_3.txt << EOF\n> fLorem ipsum dolor sit amet,\n> consectetuer adipiscing elit.\n> Aenean commodo ligula eget dolor.\n> Cum sociis natoque penatibus et\n> EOF\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat tf_3.txt \nfLorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean commodo ligula eget dolor.\nCum sociis natoque penatibus et\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_9": {
+    "id": 9,
+    "task_name_en": "Use cat to add the line 'the second 2' to the text file tf_3.txt",
+    "task_name_ru": "Через cat добавить в текстовый файл tf_3.txt строку 'the second 2'",
+    "input": "cat >> tf_3.txt << EOF\nthe second 2\nEOF",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat >> tf_3.txt << EOF\n> the second 2\n> EOF\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat tf_3.txt\nfLorem ipsum dolor sit amet,     \nconsectetuer adipiscing elit.    \nAenean commodo ligula eget dolor.\nCum sociis natoque penatibus et\nthe second 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_10": {
+    "id": 10,
+    "task_name_en": "Use cat to add the line 'the sec 2' to the text file tf_3.txt",
+    "task_name_ru": "Через cat добавить в текстовый файл tf_3.txt строку 'the sec 2'",
+    "input": "cat >> tf_3.txt << EOF\nthe sec 2\nEOF",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat >> tf_3.txt << EOF\n> the sec 2\n> EOF\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat tf_3.txt\nfLorem ipsum dolor sit amet,     \nconsectetuer adipiscing elit.    \nAenean commodo ligula eget dolor.\nCum sociis natoque penatibus et\nthe second 2\nthe sec 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_11": {
+    "id": 11,
+    "task_name_en": "Use cat to add the line 'the sec 3' to the text file tf_2.txt",
+    "task_name_ru": "Через cat добавить в текстовый файл tf_2.txt строку 'the sec 3'",
+    "input": "cat >> tf_2.txt << EOF\nthe sec 3\nEOF",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat >> tf_2.txt << EOF\n> the sec 3\n> EOF\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat tf_2.txt\nthe sec 3\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_12": {
+    "id": 12,
+    "task_name_en": "Use cat to add the line 'the SeCoNd 2' to the text file tf_3.txt",
+    "task_name_ru": "Через cat добавить в текстовый файл tf_3.txt строку 'the SeCoNd 2'",
+    "input": "cat >> tf_3.txt << EOF\nthe SeCoNd 2\nEOF",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat >> tf_3.txt << EOF\n> the SeCoNd 2\n> EOF\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat tf_3.txt\nfLorem ipsum dolor sit amet,     \nconsectetuer adipiscing elit.    \nAenean commodo ligula eget dolor.\nCum sociis natoque penatibus et\nthe second 2\nthe sec 2\nthe SeCoNd 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_13": {
+    "id": 13,
+    "task_name_en": "Use cat to add the line 'the seConD 2' to the text file tf_2.txt",
+    "task_name_ru": "Через cat добавить в текстовый файл tf_2.txt строку 'the seConD 2'",
+    "input": "cat >> tf_2.txt << EOF\nthe seConD 2\nEOF",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat >> tf_2.txt << EOF\n> the seConD 2\n> EOF\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat tf_2.txt\nthe sec 3   \nthe seConD 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_14": {
+    "id": 14,
+    "task_name_en": "Create a text file tf_4.txt with 15 lines.",
+    "task_name_ru": "Сделать текстовый файл tf_4.txt в котором будет 15 строк.",
+    "input": "for i in {1..15}; do\n  if [ $i == 1 ]; then\n    touch tf_4.txt\n  fi\n  echo '$i string' >> tf_4.txt\ndone",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ for i in {1..15}; do\n>   if [ $i == 1 ]; then\n>     touch tf_4.txt\n>   fi\n>   echo '$i string' >> tf_4.txt\n> done\n\n$ cat tf_4.txt\n1 string\n2 string\n3 string\n4 string\n5 string\n6 string\n7 string\n8 string\n9 string\n10 string\n11 string\n12 string\n13 string\n14 string\n15 string\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_15": {
+    "id": 15,
+    "task_name_en": "Create a text file tF_5.txt with 13 lines.",
+    "task_name_ru": "Сделать текстовый файл tF_5.txt в котором будет 13 строк.",
+    "input": "for i in {1..13}; do\n  if [ $i == 1 ]; then\n    touch tF_5.txt\n  fi\n  echo '$i string' >> tF_5.txt\ndone",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ for i in {1..13}; do\n>   if [ $i == 1 ]; then        \n>     touch tF_5.txt            \n>   fi                          \n>   echo \"$i string\" >> tF_5.txt\n> done                          \n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cat tF_5.txt\n1 string\n2 string\n3 string\n4 string\n5 string\n6 string\n7 string\n8 string\n9 string\n10 string\n11 string\n12 string\n13 string\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_16": {
+    "id": 16,
+    "task_name_en": "List all files in the current folder.",
+    "task_name_ru": "Вывести список всех файлов в папке.",
+    "input": "ls",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ ls\ntF_5.txt  tf_2.txt  tf_3.txt  tf_4.txt\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_17": {
+    "id": 17,
+    "task_name_en": "Go back to the parent directory (from inner_dir_1 to dir_1)",
+    "task_name_ru": "Выйти из папки inner_dir_1",
+    "input": "cd ..",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)\n$ cd ..\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_18": {
+    "id": 18,
+    "task_name_en": "Display the contents of the file tf_3.txt in the terminal.",
+    "task_name_ru": "Вывести содержимое файла tf_3.txt в терминал.",
+    "input": "cat inner_dir_1/tf_3.txt",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ cat inner_dir_1/tf_3.txt\nfLorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean commodo ligula eget dolor.\nCum sociis natoque penatibus et\nthe second 2\nthe sec 2\nthe SeCoNd 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_19": {
+    "id": 19,
+    "task_name_en": "Find the path to the file tf_4.txt",
+    "task_name_ru": "Найти путь к файлу tf_4.txt",
+    "input": "echo 'find $PWD -type f -name tf_4.txt'\nfind $PWD -type f -name tf_4.txt\necho 'realpath tf_4.txt'\nrealpath tf_4.txt\necho ' readlink -f tf_4.txt'\nreadlink -f tf_4.txt",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ find $PWD -type f -name tf_4.txt\n/c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1/tf_4.txt\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_20": {
+    "id": 20,
+    "task_name_en": "Clear the contents of the file tf_4.txt without deleting the file itself.",
+    "task_name_ru": "Отчистить файл tf_4.txt от содержимого без удаления самого файла.",
+    "input": "truncate -s 0 tf_4.txt",
+    "output": " MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ cat ./inner_dir_1/tf_4.txt\n1 string\n2 string\n3 string\n4 string\n5 string\n6 string\n7 string\n8 string\n9 string\n10 string\n11 string\n12 string\n13 string\n14 string\n15 string\nMINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ find $PWD -type f -name tf_4.txt -exec truncate -s 0 {} \\;\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ cat ./inner_dir_1/tf_4.txt\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_21": {
+    "id": 21,
+    "task_name_en": "Find the paths of files with 'tf' in the name.",
+    "task_name_ru": "Найти путь к файлам у которых есть 'tf' в названии.",
+    "input": "find . -type f -name '*tf*'",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ find . -type f -name '*tf*'\n./inner_dir_1/tf_2.txt\n./inner_dir_1/tf_3.txt\n./inner_dir_1/tf_4.txt\n./tf_1.txt\n./tf_2.txt\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_22": {
+    "id": 22,
+    "task_name_en": "Find the paths of files with 'tf' in the name, ignoring case.",
+    "task_name_ru": "Найти путь к файлам у которых есть 'tf' в названии и буквы в любом регистре.",
+    "input": "find . -type f -iname '*tf*'",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ find . -type f -iname '*tf*'\n./inner_dir_1/tf_2.txt\n./inner_dir_1/tf_3.txt\n./inner_dir_1/tf_4.txt\n./inner_dir_1/tF_5.txt\n./tf_1.txt\n./tf_2.txt",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_23": {
+    "id": 23,
+    "task_name_en": "Find lines in files with the combination of letters 'sec' in the current folder.",
+    "task_name_ru": "Найти строки в файлах, где есть комбинация букв 'sec' в текущей папке",
+    "input": "grep -r 'sec' *",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ grep -r 'sec' *\ninner_dir_1/tf_2.txt:the sec 3\ninner_dir_1/tf_3.txt:consectetuer adipiscing elit.\ninner_dir_1/tf_3.txt:the second 2\ninner_dir_1/tf_3.txt:the sec 2\ntf_2.txt:  - the second 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_24": {
+    "id": 24,
+    "task_name_en": "Find lines in files with the combination of letters 'sec' (case-insensitive) in the current folder.",
+    "task_name_ru": "Найти строки в файлах, где есть комбинация букв 'sec' в любом регистре в текущей папке",
+    "input": "grep -ri 'sec' *",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ grep -ri 'sec' *\ninner_dir_1/tf_2.txt:the sec 3\ninner_dir_1/tf_2.txt:the seConD 2\ninner_dir_1/tf_3.txt:consectetuer adipiscing elit.\ninner_dir_1/tf_3.txt:the second 2\ninner_dir_1/tf_3.txt:the sec 2\ninner_dir_1/tf_3.txt:the SeCoNd 2\ntf_2.txt:  - the second 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_25": {
+    "id": 25,
+    "task_name_en": "Find lines in files with only the combination of letters 'sec' in the current folder.",
+    "task_name_ru": "Найти строки в файлах, где есть только комбинация букв 'sec' в текущей папке",
+    "input": "grep -rw 'sec' *",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ grep -rw 'sec' *\ninner_dir_1/tf_2.txt:the sec 3\ninner_dir_1/tf_3.txt:the sec 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_26": {
+    "id": 26,
+    "task_name_en": "Find lines in files with only the combination of letters 'sec' (case-insensitive) in the current folder.",
+    "task_name_ru": "Найти строки в файлах, где есть только комбинация букв 'sec' в любом регистре в текущей папке",
+    "input": "find . -type f -exec grep -iw 'sec' {} +",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ find . -type f -exec grep -iw 'sec' {} +\n./inner_dir_1/tf_2.txt:the sec 3\n./inner_dir_1/tf_3.txt:the sec 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_27": {
+    "id": 27,
+    "task_name_en": "Find lines in files with the combination of letters 'second' in the current folder.",
+    "task_name_ru": "Найти строки в файлах, где есть комбинация букв 'second' в текущей папке",
+    "input": "grep -r 'second' .",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ grep -r 'second' .\n./inner_dir_1/tf_3.txt:the second 2\n./tf_2.txt:  - the second 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_28": {
+    "id": 28,
+    "task_name_en": "Find lines in files with the combination of letters 'second' (case-insensitive) in the current folder.",
+    "task_name_ru": "Найти строки в файлах, где есть комбинация букв 'second' в любом регистре в текущей папке",
+    "input": "grep -ri 'second' .",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ grep -ri 'second' .\n./inner_dir_1/tf_2.txt:the seConD 2\n./inner_dir_1/tf_3.txt:the second 2\n./inner_dir_1/tf_3.txt:the SeCoNd 2\n./tf_2.txt:  - the second 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_29": {
+    "id": 29,
+    "task_name_en": "Find lines in files with the combination of letters 'second' in all subfolders.",
+    "task_name_ru": "Найти строки в файлах, где есть комбинация букв 'second' во всех папках ниже уровнем",
+    "input": "grep -r 'second' *",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ grep -r 'second' *\ninner_dir_1/tf_3.txt:the second 2\ntf_2.txt:  - the second 2\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_30": {
+    "id": 30,
+    "task_name_en": "Find only the path and filename in lines containing the combination of letters 'second' in the current folder.",
+    "task_name_ru": "Найти только путь и название файла в строках которых есть комбинация букв 'second' в текущей папке",
+    "input": "grep -rl 'second' *",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ grep -rl 'second' *\ninner_dir_1/tf_3.txt\ntf_2.txt\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_31": {
+    "id": 31,
+    "task_name_en": "Find all lines in all files where 'second' is not present.",
+    "task_name_ru": "Найти все строки во всех файлах, где нет комбинации 'second'",
+    "input": "grep -r -v 'second' .",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ grep -r -v 'second' .\n./inner_dir_1/tf_2.txt:the sec 3\n./inner_dir_1/tf_2.txt:the seConD 2\n./inner_dir_1/tf_3.txt:fLorem ipsum dolor sit amet,\n./inner_dir_1/tf_3.txt:consectetuer adipiscing elit.\n./inner_dir_1/tf_3.txt:Aenean commodo ligula eget dolor.\n./inner_dir_1/tf_3.txt:Cum sociis natoque penatibus et\n./inner_dir_1/tf_3.txt:the sec 2\n./inner_dir_1/tf_3.txt:the SeCoNd 2\n./inner_dir_1/tF_5.txt:1 string\n./inner_dir_1/tF_5.txt:2 string\n./inner_dir_1/tF_5.txt:3 string\n./inner_dir_1/tF_5.txt:4 string\n./inner_dir_1/tF_5.txt:5 string\n./inner_dir_1/tF_5.txt:6 string\n./inner_dir_1/tF_5.txt:7 string\n./inner_dir_1/tF_5.txt:8 string\n./inner_dir_1/tF_5.txt:9 string\n./inner_dir_1/tF_5.txt:10 string\n./inner_dir_1/tF_5.txt:11 string\n./inner_dir_1/tF_5.txt:12 string\n./inner_dir_1/tF_5.txt:13 string\n./tf_2.txt:  - the first 1\n./tf_2.txt:  - the third 3\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_32": {
+    "id": 32,
+    "task_name_en": "Find only the filename and path of files where 'second' is not present.",
+    "task_name_ru": "Найти только название и путь к файлам, где нет комбинации 'second'",
+    "input": "find . -type f -exec grep -L 'second' {} \\;",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ find . -type f -exec grep -L 'second' {} \\;\n./inner_dir_1/tf_2.txt\n./inner_dir_1/tf_4.txt\n./inner_dir_1/tF_5.txt\n./tf_1.txt\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_33": {
+    "id": 33,
+    "task_name_en": "Display the last 4 lines of any text file in the terminal.",
+    "task_name_ru": "Вывести в терминал 4 последних строк любого текстового файла",
+    "input": "find . -type f -exec bash -c 'echo 'File: $1'; tail -n 4 '$1'' _ {} \\;\necho 'var. 2'\nfind . -type f -name '*.txt' -exec tail -n 4 {} \\; -quit",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ find . -type f -exec bash -c 'echo \"File: $1\"; tail -n 4 \"$1\"' _ {} \\;\nFile: ./inner_dir_1/tf_2.txt\nthe sec 3\nthe seConD 2\nFile: ./inner_dir_1/tf_3.txt\nCum sociis natoque penatibus et\nthe second 2\nthe sec 2\nthe SeCoNd 2\nFile: ./inner_dir_1/tf_4.txt\nFile: ./inner_dir_1/tF_5.txt\n10 string\n11 string\n12 string\n13 string\nFile: ./tf_1.txt\nFile: ./tf_2.txt\n  - the first 1\n  - the second 2\n  - the third 3\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_34": {
+    "id": 34,
+    "task_name_en": "Display the first 4 lines of any text file in the terminal.",
+    "task_name_ru": "Вывести в терминал 4 первые строки любого текстового файла.",
+    "input": "find . -type f -exec bash -c 'echo 'File: $1'; head -n 4 '$1'' _ {} \\;\necho 'var. 2'\nfind . -type f -name '*.txt' -exec head -n 4 {} \\; -quit",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ find . -type f -exec bash -c 'echo \"File: $1\"; head -n 4 \"$1\"' _ {} \\;\nFile: ./inner_dir_1/tf_2.txt\nthe sec 3\nthe seConD 2\nFile: ./inner_dir_1/tf_3.txt\nfLorem ipsum dolor sit amet,\nconsectetuer adipiscing elit.\nAenean commodo ligula eget dolor.\nCum sociis natoque penatibus et\nFile: ./inner_dir_1/tf_4.txt\nFile: ./inner_dir_1/tF_5.txt\n1 string\n2 string\n3 string\n4 string\nFile: ./tf_1.txt\nFile: ./tf_2.txt\n  - the first 1\n  - the second 2\n  - the third 3\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_35": {
+    "id": 35,
+    "task_name_en": "One-liner command. Create a folder and create a text file with content.",
+    "task_name_ru": "Команда в одну строку. Создать папку и создать текстовый файл с содержимым.",
+    "input": "mkdir new_folder && echo 'text file with content!' > new_folder/new_file.txt",
+    "output": "",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_36": {
+    "id": 36,
+    "task_name_en": "One-liner command. Move text files containing the word 'sec' to any one folder.",
+    "task_name_ru": "Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово 'sec'",
+    "input": "mkdir -p move_dir && grep -rl 'sec' | xargs -I {} mv {} move_dir/",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ mkdir new_folder && echo 'text file with content!' > new_folder/new_file.txt\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ tree\n.\n|-- inner_dir_1\n|   |-- tF_5.txt\n|   |-- tf_2.txt\n|   |-- tf_3.txt\n|   `-- tf_4.txt\n|-- new_folder\n|   `-- new_file.txt\n|-- tf_1.txt\n`-- tf_2.txt\n\n2 directories, 7 files\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_37": {
+    "id": 37,
+    "task_name_en": "One-liner command. Copy text files containing the word 'sec' to any one folder.",
+    "task_name_ru": "Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово 'sec'",
+    "input": "mkdir -p cp_dir && grep -rl 'sec' | xargs -I {} cp {} cp_dir/",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ mkdir -p cp_dir && grep -rl 'sec' | xargs -I {} cp {} cp_dir/\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ tree\n.\n|-- cp_dir\n|   |-- tf_2.txt\n|   `-- tf_3.txt\n|-- inner_dir_1\n|   |-- tF_5.txt\n|   |-- tf_2.txt\n|   |-- tf_3.txt\n|   `-- tf_4.txt\n|-- new_folder\n|   `-- new_file.txt\n|-- tf_1.txt\n`-- tf_2.txt\n\n3 directories, 9 files\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_38": {
+    "id": 38,
+    "task_name_en": "One-liner command. Find all lines with 'sec' in all text files, copy and paste these lines into a new text file.",
+    "task_name_ru": "Команда в одну строку. Найти все строки c 'sec' во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл.",
+    "input": "find . -type f -name '*.txt' -exec grep -H 'sec' {} + | tee new_sec_file.txt",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ find . -type f -name '*.txt' -exec grep -H 'sec' {} + | tee new_sec_file.txt\n./cp_dir/tf_2.txt:  - the second 2\n./cp_dir/tf_3.txt:consectetuer adipiscing elit.\n./cp_dir/tf_3.txt:the second 2\n./cp_dir/tf_3.txt:the sec 2\n./inner_dir_1/tf_2.txt:the sec 3\n./inner_dir_1/tf_3.txt:consectetuer adipiscing elit.\n./inner_dir_1/tf_3.txt:the second 2\n./inner_dir_1/tf_3.txt:the sec 2\n./tf_2.txt:  - the second 2\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ tree\n.\n|-- cp_dir\n|   |-- tf_2.txt\n|   `-- tf_3.txt\n|-- inner_dir_1\n|   |-- tF_5.txt\n|   |-- tf_2.txt\n|   |-- tf_3.txt\n|   `-- tf_4.txt\n|-- new_folder\n|   `-- new_file.txt\n|-- new_sec_file.txt\n|-- tf_1.txt\n`-- tf_2.txt\n\n3 directories, 10 files\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_39": {
+    "id": 39,
+    "task_name_en": "One-liner command. Delete text files containing the word 'sec' in their content.",
+    "task_name_ru": "Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово 'sec'",
+    "input": "grep -rlZ 'sec' | xargs -0 -t -I {} rm -f {}",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ grep -rlZ 'sec' | xargs -0 -t -I {} rm -f {}\nrm -f cp_dir/tf_2.txt\nrm -f cp_dir/tf_3.txt\nrm -f inner_dir_1/tf_2.txt\nrm -f inner_dir_1/tf_3.txt\nrm -f new_sec_file.txt\nrm -f tf_2.txt\n\n MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ tree\n.\n|-- cp_dir\n|-- inner_dir_1\n|   |-- tF_5.txt\n|   `-- tf_4.txt\n|-- new_folder\n|   `-- new_file.txt\n`-- tf_1.txt\n\n3 directories, 4 files\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  },
+  "task_40": {
+    "id": 40,
+    "task_name_en": "Simply print the string 'Good job!!' to the terminal.",
+    "task_name_ru": "Просто вывести в терминал строку 'Good job!!'",
+    "input": "echo 'Good job!!',",
+    "output": "MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)\n$ echo 'Good job!!'\nGood job!!\n",
+    "description": "description coming soon",
+    "increased_complexity": false
+  }
+}
