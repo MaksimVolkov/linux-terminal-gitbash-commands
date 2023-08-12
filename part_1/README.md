@@ -627,7 +627,9 @@ date
 
 Output:
 ```
-
+MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (dev)
+$ date
+Sat Aug 7 16:02:14 FLEDT 2023
 ```
 #### Description:
 
