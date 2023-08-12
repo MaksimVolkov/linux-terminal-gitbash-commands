@@ -1,4 +1,4 @@
-# <a id='back_to_list'>Linux terminal (GitBash) commands part 2</a>
+# <a id='back_to_list'>Linux terminal (GitBash) commands part 1</a>
 | №  | Title EN | Title RU | Answer |
 |----|----------|----------|--------|
 | 1  | [Show the current directory](#task_1) | Посмотреть где я | pwd |
