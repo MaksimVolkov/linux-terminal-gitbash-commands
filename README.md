@@ -1,37 +1,35 @@
-# <a id="back_to_list">linux-terminal-gitbash-commands</a>
+# <a id='back_to_list'>Linux terminal (GitBash) commands part</a>
 
-## Go to [Part 2](#part_2) list --->
+## Go to [Part 2](#back_to_list_p_2) list --->
 
-### <a id='part_1'>Linux terminal (GitBash) commands part 1</a>
+### <a id='back_to_list_p_1'>Linux terminal (GitBash) commands part 1</a>
 
-| №  | Title EN | Title RU | Answer |
-|----|----------|----------|--------|
-| 1  | [Show the current directory](#task_1) | Посмотреть где я | pwd |
-| 2  | [Create a folder](#task_2) | Создать папку | mkdir screenshots <br />ls |
-| 3  | [Enter folder](#task_3) | Зайти в папку | cd screenshots <br />pwd |
-| 4  | [Create 3 folders](#task_4) | Создать 3 папки | mkdir task_4 <br />cd task_4  <br />mkdir cild_dir_1 cild_dir_2 cild_dir_3 <br />cd .. <br />echo"extra_examples" <br />cd task_4 <br />mkdir extra_examples <br />cd extra_examples <br />mkdir dir{1..5} <br />ls  <br />mkdir {1,2,3} <br />ls <br />mkdir test{01..5}   <br />ls   <br />mkdir -p dir_parent/cild_dir_{1..3} <br />ls <br />cd dir_parent <br />ls <br />cd .. <br />mkdir -p `date '+%y%m%d'`/{1,2,3} <br />ls <br />cd `date '+%y%m%d'` <br />ls <br />cd .. |
-| 5  | [Go to any folder](#task_5) | Зайти в любую папку | mkdir -p task_5/cild_dir_task_{1..3} <br />tree <br />cd task_5/cild_dir_task_2 <br />pwd |
-| 6  | [Create 5 files (3 txt, 2 json)](#task_6) | Создать 5 файлов (3 txt, 2 json) | mkdir task_6 <br />cd task_6 <br />touch file1.txt file2.txt file3.txt file4.json file5.json <br />cd .. <br />tree |
-| 7  | [Create 3 folders](#task_7) | Создать 3 папки | mkdir -p task_7/task_folder{1..3} <br />cd task_7 <br />touch task_folder{1..3}/task_7.log task_folder{1..3}/task_7.json task_folder{1..3}/task_7.txt <br />tree |
-| 8  | [List the contents of a folder](#task_8) | Вывести список содержимого папки | ls <br />ls -la <br />ls -l <br />ls -R <br />tree |
-| 9  | [Open any txt file](#task_9) | + Открыть любой txt файл | touch task_9.txt <br />echo "lorem ipsum" > task_9.txt <br />cat task_9.txt |
-| 10  | [Write something there, any text.](#task_10) | + написать туда что-нибудь, любой текст. | cat > task_10.txt <br />echo 'any text lorem ipsum' > task_10.txt |
-| 11  | [Save and exit](#task_11) | + сохранить и выйти. | - esc :qw <br /> |
-| 12  | [Exit folder one level up](#task_12) | Выйти из папки на уровень выше | cd .. |
-| 13  | [Move any 2 files you created to any other folder.](#task_13) | переместить любые 2 файла, которые вы создали, в любую другую папку. | mkdir task_13 <br />touch file1.txt file2.txt <br />tree <br />mv file1.txt file2.txt task_13/ <br />tree |
-| 14  | [Copy any 2 files you created to any other folder.](#task_14) | скопировать любые 2 файла, которые вы создали, в любую другую папку. | mkdir task_14 <br />touch file3.txt file4.json <br />ls <br />cp file3.txt file4.json task_14/ <br />ls |
-| 15  | [Find a file by name](#task_15) | Найти файл по имени | touch file_name_1.txt file_name_2.txt file_name_3.txt <br />find . -name 'file_name_2.txt' |
-| 16  | [View content in real-time (grep command) and learn how it works.](#task_16) | просмотреть содержимое в реальном времени (команда grep) изучите как она работает. | touch example.log <br />echo "lorem ipsum lorem" >> example.log <br />echo "lorem ipsum error" >> example.log <br />tail -f example.log | grep 'error' |
-| 17  | [Output the first few lines from a text file](#task_17) | вывести несколько первых строк из текстового файла | touch example.txt <br />echo "lorem ipsum lorem" >> example.txt <br />echo "lorem ipsum error" >> example.txt <br />head -n 2 example.txt |
-| 18  | [Output the last few lines from a text file](#task_18) | вывести несколько последних строк из текстового файла  | touch example.txt <br />echo "lorem ipsum lorem" >> example.txt <br />echo "lorem ipsum error" >> example.txt <br />tail -n 2 example.txt |
-| 19  | [View the contents of a long file (the less command) and learn how it works.](#task_19) | просмотреть содержимое длинного файла (команда less) изучите как она работает. | cat > lorem_ipsum.txt <br />echo 'What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the..' > lorem_ipsum.txt <br />less lorem_ipsum.txt |
-| 20  | [Display date and time](#task_20) | вывести дату и время | date |
-| 21*  | [Send an http request to the server. http: //162.55.220.72:5006/terminal-hw-request](#task_21) | Отправить http запрос на сервер. http://162.55.220.72:5006/terminal-hw-request | curl "http://162.55.220.72:5006/terminal-hw-request" <br /> curl "http://162.55.220.72:5005/get_method?name=maksim&age=33" |
-| 22*  | [Write a script that will automatically execute the points 3, 4, 5, 6, 7, 8, 13](#task_22) | Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 | cat >> myscript.sh << EOF <br />#!/bin/bash <br />mkdir task_22 <br />echo "Item 3: Enter folder | Зайти в папку" <br />cd task_22 <br /> <br />echo "Item 4: Create 3 folders" <br />mkdir folder_{1..3} <br /> <br />echo "Item 5: Go to any folder" <br />cd folder_1 <br /> <br />echo "Item 6: Create 5 files (3 txt, 2 json)" <br />touch file_1.txt file_2.txt file_3.txt file_4.json file_5.json <br /> <br />echo "Item 7: Create 3 folders" <br />mkdir folder_4 folder_5 folder_6 <br /> <br />echo "Item 8: List the contents of a folder" <br />ls <br />tree <br /> <br />echo "Item 13: Move any 2 files you created to any other folder." <br />mv file_1.txt file_2.txt folder_4/ <br />tree <br />EOF <br />chmod +x myscript.sh <br />./myscript.sh |
+| №  | Title EN | Answer |
+|----|----------|--------|
+| <a id='back_task_1_part_1'>1</a>  | [Show the current directory](#task_1_part_1) <details><summary>RU</summary>Посмотреть где я</details> | pwd |
+| <a id='back_task_2_part_1'>2</a>  | [Create a folder](#task_2_part_1) <details><summary>RU</summary>Создать папку</details> | mkdir screenshots <br />ls |
+| <a id='back_task_3_part_1'>3</a>  | [Enter folder](#task_3_part_1) <details><summary>RU</summary>Зайти в папку</details> | cd screenshots <br />pwd |
+| <a id='back_task_4_part_1'>4</a>  | [Create 3 folders](#task_4_part_1) <details><summary>RU</summary>Создать 3 папки</details> | mkdir task_4 <br />cd task_4  <br />mkdir cild_dir_1 cild_dir_2 cild_dir_3 <br />cd .. <br />echo"extra_examples" <br />cd task_4 <br />mkdir extra_examples <br />cd extra_examples <br />mkdir dir{1..5} <br />ls  <br />mkdir {1,2,3} <br />ls <br />mkdir test{01..5}   <br />ls   <br />mkdir -p dir_parent/cild_dir_{1..3} <br />ls <br />cd dir_parent <br />ls <br />cd .. <br />mkdir -p `date '+%y%m%d'`/{1,2,3} <br />ls <br />cd `date '+%y%m%d'` <br />ls <br />cd .. |
+| <a id='back_task_5_part_1'>5</a>  | [Go to any folder](#task_5_part_1) <details><summary>RU</summary>Зайти в любую папку</details> | mkdir -p task_5/cild_dir_task_{1..3} <br />tree <br />cd task_5/cild_dir_task_2 <br />pwd |
+| <a id='back_task_6_part_1'>6</a>  | [Create 5 files (3 txt, 2 json)](#task_6_part_1) <details><summary>RU</summary>Создать 5 файлов (3 txt, 2 json)</details> | mkdir task_6 <br />cd task_6 <br />touch file1.txt file2.txt file3.txt file4.json file5.json <br />cd .. <br />tree |
+| <a id='back_task_7_part_1'>7</a>  | [Create 3 folders](#task_7_part_1) <details><summary>RU</summary>Создать 3 папки</details> | mkdir -p task_7/task_folder{1..3} <br />cd task_7 <br />touch task_folder{1..3}/task_7.log task_folder{1..3}/task_7.json task_folder{1..3}/task_7.txt <br />tree |
+| <a id='back_task_8_part_1'>8</a>  | [List the contents of a folder](#task_8_part_1) <details><summary>RU</summary>Вывести список содержимого папки</details> | ls <br />ls -la <br />ls -l <br />ls -R <br />tree |
+| <a id='back_task_9_part_1'>9</a>  | [Open any txt file](#task_9_part_1) <details><summary>RU</summary>+ Открыть любой txt файл</details> | touch task_9.txt <br />echo "lorem ipsum" > task_9.txt <br />cat task_9.txt |
+| <a id='back_task_10_part_1'>10</a>  | [Write something there, any text.](#task_10_part_1) <details><summary>RU</summary>+ написать туда что-нибудь, любой текст.</details> | cat > task_10.txt <br />echo 'any text lorem ipsum' > task_10.txt |
+| <a id='back_task_11_part_1'>11</a>  | [Save and exit](#task_11_part_1) <details><summary>RU</summary>+ сохранить и выйти.</details> | - esc :qw <br /> |
+| <a id='back_task_12_part_1'>12</a>  | [Exit folder one level up](#task_12_part_1) <details><summary>RU</summary>Выйти из папки на уровень выше</details> | cd .. |
+| <a id='back_task_13_part_1'>13</a>  | [Move any 2 files you created to any other folder.](#task_13_part_1) <details><summary>RU</summary>переместить любые 2 файла, которые вы создали, в любую другую папку.</details> | mkdir task_13 <br />touch file1.txt file2.txt <br />tree <br />mv file1.txt file2.txt task_13/ <br />tree |
+| <a id='back_task_14_part_1'>14</a>  | [Copy any 2 files you created to any other folder.](#task_14_part_1) <details><summary>RU</summary>скопировать любые 2 файла, которые вы создали, в любую другую папку.</details> | mkdir task_14 <br />touch file3.txt file4.json <br />ls <br />cp file3.txt file4.json task_14/ <br />ls |
+| <a id='back_task_15_part_1'>15</a>  | [Find a file by name](#task_15_part_1) <details><summary>RU</summary>Найти файл по имени</details> | touch file_name_1.txt file_name_2.txt file_name_3.txt <br />find . -name 'file_name_2.txt' |
+| <a id='back_task_16_part_1'>16</a>  | [View content in real-time (grep command) and learn how it works.](#task_16_part_1) <details><summary>RU</summary>просмотреть содержимое в реальном времени (команда grep) изучите как она работает.</details> | touch example.log <br />echo "lorem ipsum lorem" >> example.log <br />echo "lorem ipsum error" >> example.log <br />tail -f example.log | grep 'error' |
+| <a id='back_task_17_part_1'>17</a>  | [Output the first few lines from a text file](#task_17_part_1) <details><summary>RU</summary>вывести несколько первых строк из текстового файла</details> | touch example.txt <br />echo "lorem ipsum lorem" >> example.txt <br />echo "lorem ipsum error" >> example.txt <br />head -n 2 example.txt |
+| <a id='back_task_18_part_1'>18</a>  | [Output the last few lines from a text file](#task_18_part_1) <details><summary>RU</summary>вывести несколько последних строк из текстового файла </details> | touch example.txt <br />echo "lorem ipsum lorem" >> example.txt <br />echo "lorem ipsum error" >> example.txt <br />tail -n 2 example.txt |
+| <a id='back_task_19_part_1'>19</a>  | [View the contents of a long file (the less command) and learn how it works.](#task_19_part_1) <details><summary>RU</summary>просмотреть содержимое длинного файла (команда less) изучите как она работает.</details> | cat > lorem_ipsum.txt <br />echo 'What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the..' > lorem_ipsum.txt <br />less lorem_ipsum.txt |
+| <a id='back_task_20_part_1'>20</a>  | [Display date and time](#task_20_part_1) <details><summary>RU</summary>вывести дату и время</details> | date |
+| <a id='back_task_21_part_1'>21*</a>  | [Send an http request to the server. http: //162.55.220.72:5006/terminal-hw-request](#task_21_part_1) <details><summary>RU</summary>Отправить http запрос на сервер. http://162.55.220.72:5006/terminal-hw-request</details> | curl "http://162.55.220.72:5006/terminal-hw-request" <br /> curl "http://162.55.220.72:5005/get_method?name=maksim&age=33" |
+| <a id='back_task_22_part_1'>22*</a>  | [Write a script that will automatically execute the points 3, 4, 5, 6, 7, 8, 13](#task_22_part_1) <details><summary>RU</summary>Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13</details> | cat >> myscript.sh << EOF <br />#!/bin/bash <br />mkdir task_22 <br />echo "Item 3: Enter folder | Зайти в папку" <br />cd task_22 <br /> <br />echo "Item 4: Create 3 folders" <br />mkdir folder_{1..3} <br /> <br />echo "Item 5: Go to any folder" <br />cd folder_1 <br /> <br />echo "Item 6: Create 5 files (3 txt, 2 json)" <br />touch file_1.txt file_2.txt file_3.txt file_4.json file_5.json <br /> <br />echo "Item 7: Create 3 folders" <br />mkdir folder_4 folder_5 folder_6 <br /> <br />echo "Item 8: List the contents of a folder" <br />ls <br />tree <br /> <br />echo "Item 13: Move any 2 files you created to any other folder." <br />mv file_1.txt file_2.txt folder_4/ <br />tree <br />EOF <br />chmod +x myscript.sh <br />./myscript.sh |
 
-### <a id='task_1'>1. Show the current directory</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_1_part_1'>1. Show the current directory</a>  |  [Back to list](#back_task_1_part_1)
 Input:
 ``` bash
 pwd
@@ -43,13 +41,12 @@ MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (master)
 $ pwd    
 /c/var/1a-testing-course/linux-terminal-gitbash-commands
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_2'>2. Create a folder</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_2_part_1'>2. Create a folder</a>  |  [Back to list](#back_task_2_part_1)
 Input:
 ``` bash
 mkdir screenshots
@@ -65,13 +62,12 @@ MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (task-2)
 $ ls
 README.md  screenshots
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_3'>3. Enter folder</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_3_part_1'>3. Enter folder</a>  |  [Back to list](#back_task_3_part_1)
 Input:
 ``` bash
 cd screenshots
@@ -87,13 +83,12 @@ MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots (ta
 $ pwd
 /c/var/1a-testing-course/linux-terminal-gitbash-commands/screenshots
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_4'>4. Create 3 folders</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_4_part_1'>4. Create 3 folders</a>  |  [Back to list](#back_task_4_part_1)
 Input:
 ``` bash
 mkdir task_4
@@ -183,13 +178,12 @@ $ ls
 MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_4/extra_examples/230801 (task-4)
 $ cd ..
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_5'>5. Go to any folder</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_5_part_1'>5. Go to any folder</a>  |  [Back to list](#back_task_5_part_1)
 Input:
 ``` bash
 mkdir -p task_5/cild_dir_task_{1..3}
@@ -222,15 +216,14 @@ $ pwd
 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_5/task_5/cild_dir_task_2    
 
 ```
+
 #### Description:
 
 > В Git Bash команда `tree` не доступна, но возможно это настроить. скачать с сайта `Zip` файл `Binaries`: https://gnuwin32.sourceforge.net/packages/tree.htm  
 > в архиве находится директорию `bin` в ней есть файл `tree.exe`, поместить его в директорию `...\Git\usr\bin` обычно
 > она находится по адресу `C:\Program Files\Git\usr\bin`. После перезпуска `Git Bash` команда `tree` станет доступна.
 
-### <a id='task_6'>6. Create 5 files (3 txt, 2 json)</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_6_part_1'>6. Create 5 files (3 txt, 2 json)</a>  |  [Back to list](#back_task_6_part_1)
 Input:
 ``` bash
 mkdir task_6
@@ -267,13 +260,12 @@ $ tree
 
 1 directory, 6 files
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_7'>7. Create 3 folders</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_7_part_1'>7. Create 3 folders</a>  |  [Back to list](#back_task_7_part_1)
 Input:
 ``` bash
 mkdir -p task_7/task_folder{1..3}
@@ -311,13 +303,12 @@ $ tree
 
 3 directories, 9 files
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_8'>8. List the contents of a folder</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_8_part_1'>8. List the contents of a folder</a>  |  [Back to list](#back_task_8_part_1)
 Input:
 ``` bash
 ls
@@ -357,13 +348,12 @@ $ tree
                      
 0 directories, 1 file
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_9'>9. Open any txt file</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_9_part_1'>9. Open any txt file</a>  |  [Back to list](#back_task_9_part_1)
 Input:
 ``` bash
 touch task_9.txt
@@ -383,13 +373,12 @@ MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_9 (dev)
 $ cat task_9.txt                                                                                  
 lorem ipsum
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_10'>10. Write something there, any text.</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_10_part_1'>10. Write something there, any text.</a>  |  [Back to list](#back_task_10_part_1)
 Input:
 ``` bash
 cat > task_10.txt
@@ -404,30 +393,23 @@ $ cat > task_10.txt
 MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_10 (dev)
 $ echo 'any text lorem ipsum' > task_10.txt 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_11'>11. Save and exit</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_11_part_1'>11. Save and exit</a>  |  [Back to list](#back_task_11_part_1)
 Input:
 ``` bash
 - esc :qw
 
 ```
 
-Output:
-```
-
-```
 #### Description:
 
 description coming soon
 
-### <a id='task_12'>12. Exit folder one level up</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_12_part_1'>12. Exit folder one level up</a>  |  [Back to list](#back_task_12_part_1)
 Input:
 ``` bash
 cd ..
@@ -440,13 +422,12 @@ $ cd ..
 
 MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_13'>13. Move any 2 files you created to any other folder.</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_13_part_1'>13. Move any 2 files you created to any other folder.</a>  |  [Back to list](#back_task_13_part_1)
 Input:
 ``` bash
 mkdir task_13
@@ -490,13 +471,12 @@ $ tree
                     
 1 directory, 3 files
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_14'>14. Copy any 2 files you created to any other folder.</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_14_part_1'>14. Copy any 2 files you created to any other folder.</a>  |  [Back to list](#back_task_14_part_1)
 Input:
 ``` bash
 mkdir task_14
@@ -526,13 +506,12 @@ MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_14 (dev)
 $ ls                                                                                               
 README.md  file3.txt  file4.json  task_14
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_15'>15. Find a file by name</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_15_part_1'>15. Find a file by name</a>  |  [Back to list](#back_task_15_part_1)
 Input:
 ``` bash
 touch file_name_1.txt file_name_2.txt file_name_3.txt
@@ -548,13 +527,12 @@ MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_15 (dev)
 $ find . -name 'file_name_2.txt'                                                                   
 ./file_name_2.txt
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_16'>16. View content in real-time (grep command) and learn how it works.</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_16_part_1'>16. View content in real-time (grep command) and learn how it works.</a>  |  [Back to list](#back_task_16_part_1)
 Input:
 ``` bash
 touch example.log
@@ -578,13 +556,12 @@ MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/task_16 (dev)
 $ tail -f example.log | grep 'error'                                                           
 lorem ipsum error
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_17'>17. Output the first few lines from a text file</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_17_part_1'>17. Output the first few lines from a text file</a>  |  [Back to list](#back_task_17_part_1)
 Input:
 ``` bash
 touch example.txt
@@ -609,13 +586,12 @@ $ head -n 2 example.txt
 lorem ipsum lorem
 lorem ipsum error
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_18'>18. Output the last few lines from a text file</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_18_part_1'>18. Output the last few lines from a text file</a>  |  [Back to list](#back_task_18_part_1)
 Input:
 ``` bash
 touch example.txt
@@ -640,13 +616,12 @@ $ tail -n 2 example.txt
 lorem ipsum lorem
 lorem ipsum error
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_19'>19. View the contents of a long file (the less command) and learn how it works.</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_19_part_1'>19. View the contents of a long file (the less command) and learn how it works.</a>  |  [Back to list](#back_task_19_part_1)
 Input:
 ``` bash
 cat > lorem_ipsum.txt
@@ -654,33 +629,21 @@ echo 'What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the..' > lorem_ip
 less lorem_ipsum.txt
 ```
 
-Output:
-```
-
-```
 #### Description:
 
 description coming soon
 
-### <a id='task_20'>20. Display date and time</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_20_part_1'>20. Display date and time</a>  |  [Back to list](#back_task_20_part_1)
 Input:
 ``` bash
 date
 ```
 
-Output:
-```
-
-```
 #### Description:
 
 description coming soon
 
-### <a id='task_21'>21.* Send an http request to the server. http: //162.55.220.72:5006/terminal-hw-request</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_21_part_1'>21.* Send an http request to the server. http: //162.55.220.72:5006/terminal-hw-request</a>  |  [Back to list](#back_task_21_part_1)
 Input:
 ``` bash
 curl "http://162.55.220.72:5006/terminal-hw-request"
@@ -710,13 +673,12 @@ $ curl "http://162.55.220.72:5005/get_method?name=maksim&age=33"
   "33"      
 ]
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_22'>22.* Write a script that will automatically execute the points 3, 4, 5, 6, 7, 8, 13</a>  
-[Back to part 1 list](#part_1) or [Back to part 2 list](#part_2)
-
+### <a id='task_22_part_1'>22.* Write a script that will automatically execute the points 3, 4, 5, 6, 7, 8, 13</a>  |  [Back to list](#back_task_22_part_1)
 Input:
 ``` bash
 cat >> myscript.sh << EOF
@@ -784,61 +746,61 @@ Item 13: Move any 2 files you created to any other folder.
 
 3 directories, 5 files
 ```
+
 #### Description:
 
 description coming soon
 
+# <a id='back_to_list'>Linux terminal (GitBash) commands part</a>
 
-## Back to [Part 1](#part_1) list --->
+## Go to [Part 1](#back_to_list_p_1) list --->
 
-# <a id='part_2'>Linux terminal (GitBash) commands part 2</a>
+### <a id='back_to_list_p_2'>Linux terminal (GitBash) commands part 2</a>
 
-| №  | Title EN | Title RU | Answer |
-|----|----------|----------|--------|
-| 1  | [Create a folder dir_1](#task_1) | Сделать папку dir_1 | mkdir dir_1 |
-| 2  | [Change directory to dir_1](#task_2) | Зайти в папку dir_1 | cd dir_1 |
-| 3  | [Create a folder inner_dir_1](#task_3) | Создать папку inner_dir_1 | mkdir -p inner_dir_1 |
-| 4  | [View the current directory](#task_4) | Посмотреть где ты находишься | pwd |
-| 5  | [Inside dir_1, create an empty text file tf_1.txt](#task_5) | Находясь в папке dir_1 создать пустой текстовый файл tf_1.txt | touch tf_1.txt |
-| 6  | [While inside dir_1, use the cat command to create a text file tf_2.txt with the following lines: - the first 1, - the second 2, - the third 3](#task_6) | Находясь в папке dir_1 через команду cat создать текстовый файл tf_2.txt со следующими строками:- the first 1, - the second 2, - the third 3 | cat > tf_2.txt << EOF <br />  - the first 1 <br />  - the second 2 <br />  - the third 3 <br />EOF |
-| 7  | [Enter the inner_dir_1 folder](#task_7) | Зайти в папку inner_dir_1 | cd inner_dir_1 |
-| 8  | [Use cat to create a text file tf_3.txt with any lines](#task_8) | Через cat сделать текстовый файл tf_3.txt c любыми строками | cat > tf_3.txt << EOF <br />fLorem ipsum dolor sit amet, <br />consectetuer adipiscing elit. <br />Aenean commodo ligula eget dolor. <br />Cum sociis natoque penatibus et <br />EOF |
-| 9  | [Use cat to add the line 'the second 2' to the text file tf_3.txt](#task_9) | Через cat добавить в текстовый файл tf_3.txt строку 'the second 2' | cat >> tf_3.txt << EOF <br />the second 2 <br />EOF |
-| 10  | [Use cat to add the line 'the sec 2' to the text file tf_3.txt](#task_10) | Через cat добавить в текстовый файл tf_3.txt строку 'the sec 2' | cat >> tf_3.txt << EOF <br />the sec 2 <br />EOF |
-| 11  | [Use cat to add the line 'the sec 3' to the text file tf_2.txt](#task_11) | Через cat добавить в текстовый файл tf_2.txt строку 'the sec 3' | cat >> tf_2.txt << EOF <br />the sec 3 <br />EOF |
-| 12  | [Use cat to add the line 'the SeCoNd 2' to the text file tf_3.txt](#task_12) | Через cat добавить в текстовый файл tf_3.txt строку 'the SeCoNd 2' | cat >> tf_3.txt << EOF <br />the SeCoNd 2 <br />EOF |
-| 13  | [Use cat to add the line 'the seConD 2' to the text file tf_2.txt](#task_13) | Через cat добавить в текстовый файл tf_2.txt строку 'the seConD 2' | cat >> tf_2.txt << EOF <br />the seConD 2 <br />EOF |
-| 14  | [Create a text file tf_4.txt with 15 lines.](#task_14) | Сделать текстовый файл tf_4.txt в котором будет 15 строк. | for i in {1..15}; do <br />  if [ $i == 1 ]; then <br />    touch tf_4.txt <br />  fi <br />  echo '$i string' >> tf_4.txt <br />done |
-| 15  | [Create a text file tF_5.txt with 13 lines.](#task_15) | Сделать текстовый файл tF_5.txt в котором будет 13 строк. | for i in {1..13}; do <br />  if [ $i == 1 ]; then <br />    touch tF_5.txt <br />  fi <br />  echo '$i string' >> tF_5.txt <br />done |
-| 16  | [List all files in the current folder.](#task_16) | Вывести список всех файлов в папке. | ls |
-| 17  | [Go back to the parent directory (from inner_dir_1 to dir_1)](#task_17) | Выйти из папки inner_dir_1 | cd .. |
-| 18  | [Display the contents of the file tf_3.txt in the terminal.](#task_18) | Вывести содержимое файла tf_3.txt в терминал. | cat inner_dir_1/tf_3.txt |
-| 19  | [Find the path to the file tf_4.txt](#task_19) | Найти путь к файлу tf_4.txt | echo 'find $PWD -type f -name tf_4.txt' <br />find $PWD -type f -name tf_4.txt <br />echo 'realpath tf_4.txt' <br />realpath tf_4.txt <br />echo ' readlink -f tf_4.txt' <br />readlink -f tf_4.txt |
-| 20  | [Clear the contents of the file tf_4.txt without deleting the file itself.](#task_20) | Отчистить файл tf_4.txt от содержимого без удаления самого файла. | truncate -s 0 tf_4.txt |
-| 21  | [Find the paths of files with 'tf' in the name.](#task_21) | Найти путь к файлам у которых есть 'tf' в названии. | find . -type f -name '*tf*' |
-| 22  | [Find the paths of files with 'tf' in the name, ignoring case.](#task_22) | Найти путь к файлам у которых есть 'tf' в названии и буквы в любом регистре. | find . -type f -iname '*tf*' |
-| 23  | [Find lines in files with the combination of letters 'sec' in the current folder.](#task_23) | Найти строки в файлах, где есть комбинация букв 'sec' в текущей папке | grep -r 'sec' * |
-| 24  | [Find lines in files with the combination of letters 'sec' (case-insensitive) in the current folder.](#task_24) | Найти строки в файлах, где есть комбинация букв 'sec' в любом регистре в текущей папке | grep -ri 'sec' * |
-| 25  | [Find lines in files with only the combination of letters 'sec' in the current folder.](#task_25) | Найти строки в файлах, где есть только комбинация букв 'sec' в текущей папке | grep -rw 'sec' * |
-| 26  | [Find lines in files with only the combination of letters 'sec' (case-insensitive) in the current folder.](#task_26) | Найти строки в файлах, где есть только комбинация букв 'sec' в любом регистре в текущей папке | find . -type f -exec grep -iw 'sec' {} + |
-| 27  | [Find lines in files with the combination of letters 'second' in the current folder.](#task_27) | Найти строки в файлах, где есть комбинация букв 'second' в текущей папке | grep -r 'second' . |
-| 28  | [Find lines in files with the combination of letters 'second' (case-insensitive) in the current folder.](#task_28) | Найти строки в файлах, где есть комбинация букв 'second' в любом регистре в текущей папке | grep -ri 'second' . |
-| 29  | [Find lines in files with the combination of letters 'second' in all subfolders.](#task_29) | Найти строки в файлах, где есть комбинация букв 'second' во всех папках ниже уровнем | grep -r 'second' * |
-| 30  | [Find only the path and filename in lines containing the combination of letters 'second' in the current folder.](#task_30) | Найти только путь и название файла в строках которых есть комбинация букв 'second' в текущей папке | grep -rl 'second' * |
-| 31  | [Find all lines in all files where 'second' is not present.](#task_31) | Найти все строки во всех файлах, где нет комбинации 'second' | grep -r -v 'second' . |
-| 32  | [Find only the filename and path of files where 'second' is not present.](#task_32) | Найти только название и путь к файлам, где нет комбинации 'second' | find . -type f -exec grep -L 'second' {} \; |
-| 33  | [Display the last 4 lines of any text file in the terminal.](#task_33) | Вывести в терминал 4 последних строк любого текстового файла | find . -type f -exec bash -c 'echo 'File: $1'; tail -n 4 '$1'' _ {} \; <br />echo 'var. 2' <br />find . -type f -name '*.txt' -exec tail -n 4 {} \; -quit |
-| 34  | [Display the first 4 lines of any text file in the terminal.](#task_34) | Вывести в терминал 4 первые строки любого текстового файла. | find . -type f -exec bash -c 'echo 'File: $1'; head -n 4 '$1'' _ {} \; <br />echo 'var. 2' <br />find . -type f -name '*.txt' -exec head -n 4 {} \; -quit |
-| 35  | [One-liner command. Create a folder and create a text file with content.](#task_35) | Команда в одну строку. Создать папку и создать текстовый файл с содержимым. | mkdir new_folder && echo 'text file with content!' > new_folder/new_file.txt |
-| 36  | [One-liner command. Move text files containing the word 'sec' to any one folder.](#task_36) | Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово 'sec' | mkdir -p move_dir && grep -rl 'sec' | xargs -I {} mv {} move_dir/ |
-| 37  | [One-liner command. Copy text files containing the word 'sec' to any one folder.](#task_37) | Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово 'sec' | mkdir -p cp_dir && grep -rl 'sec' | xargs -I {} cp {} cp_dir/ |
-| 38  | [One-liner command. Find all lines with 'sec' in all text files, copy and paste these lines into a new text file.](#task_38) | Команда в одну строку. Найти все строки c 'sec' во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл. | find . -type f -name '*.txt' -exec grep -H 'sec' {} + | tee new_sec_file.txt |
-| 39  | [One-liner command. Delete text files containing the word 'sec' in their content.](#task_39) | Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово 'sec' | grep -rlZ 'sec' | xargs -0 -t -I {} rm -f {} |
-| 40  | [Simply print the string 'Good job!!' to the terminal.](#task_40) | Просто вывести в терминал строку 'Good job!!' | echo 'Good job!!', |
+| №  | Title EN | Answer |
+|----|----------|--------|
+| <a id='back_task_1_part_2'>1</a>  | [Create a folder dir_1](#task_1_part_2) <details><summary>RU</summary>Сделать папку dir_1</details> | mkdir dir_1 |
+| <a id='back_task_2_part_2'>2</a>  | [Change directory to dir_1](#task_2_part_2) <details><summary>RU</summary>Зайти в папку dir_1</details> | cd dir_1 |
+| <a id='back_task_3_part_2'>3</a>  | [Create a folder inner_dir_1](#task_3_part_2) <details><summary>RU</summary>Создать папку inner_dir_1</details> | mkdir -p inner_dir_1 |
+| <a id='back_task_4_part_2'>4</a>  | [View the current directory](#task_4_part_2) <details><summary>RU</summary>Посмотреть где ты находишься</details> | pwd |
+| <a id='back_task_5_part_2'>5</a>  | [Inside dir_1, create an empty text file tf_1.txt](#task_5_part_2) <details><summary>RU</summary>Находясь в папке dir_1 создать пустой текстовый файл tf_1.txt</details> | touch tf_1.txt |
+| <a id='back_task_6_part_2'>6</a>  | [While inside dir_1, use the cat command to create a text file tf_2.txt with the following lines: - the first 1, - the second 2, - the third 3](#task_6_part_2) <details><summary>RU</summary>Находясь в папке dir_1 через команду cat создать текстовый файл tf_2.txt со следующими строками:- the first 1, - the second 2, - the third 3</details> | cat > tf_2.txt << EOF <br />  - the first 1 <br />  - the second 2 <br />  - the third 3 <br />EOF |
+| <a id='back_task_7_part_2'>7</a>  | [Enter the inner_dir_1 folder](#task_7_part_2) <details><summary>RU</summary>Зайти в папку inner_dir_1</details> | cd inner_dir_1 |
+| <a id='back_task_8_part_2'>8</a>  | [Use cat to create a text file tf_3.txt with any lines](#task_8_part_2) <details><summary>RU</summary>Через cat сделать текстовый файл tf_3.txt c любыми строками</details> | cat > tf_3.txt << EOF <br />fLorem ipsum dolor sit amet, <br />consectetuer adipiscing elit. <br />Aenean commodo ligula eget dolor. <br />Cum sociis natoque penatibus et <br />EOF |
+| <a id='back_task_9_part_2'>9</a>  | [Use cat to add the line 'the second 2' to the text file tf_3.txt](#task_9_part_2) <details><summary>RU</summary>Через cat добавить в текстовый файл tf_3.txt строку 'the second 2'</details> | cat >> tf_3.txt << EOF <br />the second 2 <br />EOF |
+| <a id='back_task_10_part_2'>10</a>  | [Use cat to add the line 'the sec 2' to the text file tf_3.txt](#task_10_part_2) <details><summary>RU</summary>Через cat добавить в текстовый файл tf_3.txt строку 'the sec 2'</details> | cat >> tf_3.txt << EOF <br />the sec 2 <br />EOF |
+| <a id='back_task_11_part_2'>11</a>  | [Use cat to add the line 'the sec 3' to the text file tf_2.txt](#task_11_part_2) <details><summary>RU</summary>Через cat добавить в текстовый файл tf_2.txt строку 'the sec 3'</details> | cat >> tf_2.txt << EOF <br />the sec 3 <br />EOF |
+| <a id='back_task_12_part_2'>12</a>  | [Use cat to add the line 'the SeCoNd 2' to the text file tf_3.txt](#task_12_part_2) <details><summary>RU</summary>Через cat добавить в текстовый файл tf_3.txt строку 'the SeCoNd 2'</details> | cat >> tf_3.txt << EOF <br />the SeCoNd 2 <br />EOF |
+| <a id='back_task_13_part_2'>13</a>  | [Use cat to add the line 'the seConD 2' to the text file tf_2.txt](#task_13_part_2) <details><summary>RU</summary>Через cat добавить в текстовый файл tf_2.txt строку 'the seConD 2'</details> | cat >> tf_2.txt << EOF <br />the seConD 2 <br />EOF |
+| <a id='back_task_14_part_2'>14</a>  | [Create a text file tf_4.txt with 15 lines.](#task_14_part_2) <details><summary>RU</summary>Сделать текстовый файл tf_4.txt в котором будет 15 строк.</details> | for i in {1..15}; do <br />  if [ $i == 1 ]; then <br />    touch tf_4.txt <br />  fi <br />  echo '$i string' >> tf_4.txt <br />done |
+| <a id='back_task_15_part_2'>15</a>  | [Create a text file tF_5.txt with 13 lines.](#task_15_part_2) <details><summary>RU</summary>Сделать текстовый файл tF_5.txt в котором будет 13 строк.</details> | for i in {1..13}; do <br />  if [ $i == 1 ]; then <br />    touch tF_5.txt <br />  fi <br />  echo '$i string' >> tF_5.txt <br />done |
+| <a id='back_task_16_part_2'>16</a>  | [List all files in the current folder.](#task_16_part_2) <details><summary>RU</summary>Вывести список всех файлов в папке.</details> | ls |
+| <a id='back_task_17_part_2'>17</a>  | [Go back to the parent directory (from inner_dir_1 to dir_1)](#task_17_part_2) <details><summary>RU</summary>Выйти из папки inner_dir_1</details> | cd .. |
+| <a id='back_task_18_part_2'>18</a>  | [Display the contents of the file tf_3.txt in the terminal.](#task_18_part_2) <details><summary>RU</summary>Вывести содержимое файла tf_3.txt в терминал.</details> | cat inner_dir_1/tf_3.txt |
+| <a id='back_task_19_part_2'>19</a>  | [Find the path to the file tf_4.txt](#task_19_part_2) <details><summary>RU</summary>Найти путь к файлу tf_4.txt</details> | echo 'find $PWD -type f -name tf_4.txt' <br />find $PWD -type f -name tf_4.txt <br />echo 'realpath tf_4.txt' <br />realpath tf_4.txt <br />echo ' readlink -f tf_4.txt' <br />readlink -f tf_4.txt |
+| <a id='back_task_20_part_2'>20</a>  | [Clear the contents of the file tf_4.txt without deleting the file itself.](#task_20_part_2) <details><summary>RU</summary>Отчистить файл tf_4.txt от содержимого без удаления самого файла.</details> | truncate -s 0 tf_4.txt |
+| <a id='back_task_21_part_2'>21</a>  | [Find the paths of files with 'tf' in the name.](#task_21_part_2) <details><summary>RU</summary>Найти путь к файлам у которых есть 'tf' в названии.</details> | find . -type f -name '*tf*' |
+| <a id='back_task_22_part_2'>22</a>  | [Find the paths of files with 'tf' in the name, ignoring case.](#task_22_part_2) <details><summary>RU</summary>Найти путь к файлам у которых есть 'tf' в названии и буквы в любом регистре.</details> | find . -type f -iname '*tf*' |
+| <a id='back_task_23_part_2'>23</a>  | [Find lines in files with the combination of letters 'sec' in the current folder.](#task_23_part_2) <details><summary>RU</summary>Найти строки в файлах, где есть комбинация букв 'sec' в текущей папке</details> | grep -r 'sec' * |
+| <a id='back_task_24_part_2'>24</a>  | [Find lines in files with the combination of letters 'sec' (case-insensitive) in the current folder.](#task_24_part_2) <details><summary>RU</summary>Найти строки в файлах, где есть комбинация букв 'sec' в любом регистре в текущей папке</details> | grep -ri 'sec' * |
+| <a id='back_task_25_part_2'>25</a>  | [Find lines in files with only the combination of letters 'sec' in the current folder.](#task_25_part_2) <details><summary>RU</summary>Найти строки в файлах, где есть только комбинация букв 'sec' в текущей папке</details> | grep -rw 'sec' * |
+| <a id='back_task_26_part_2'>26</a>  | [Find lines in files with only the combination of letters 'sec' (case-insensitive) in the current folder.](#task_26_part_2) <details><summary>RU</summary>Найти строки в файлах, где есть только комбинация букв 'sec' в любом регистре в текущей папке</details> | find . -type f -exec grep -iw 'sec' {} + |
+| <a id='back_task_27_part_2'>27</a>  | [Find lines in files with the combination of letters 'second' in the current folder.](#task_27_part_2) <details><summary>RU</summary>Найти строки в файлах, где есть комбинация букв 'second' в текущей папке</details> | grep -r 'second' . |
+| <a id='back_task_28_part_2'>28</a>  | [Find lines in files with the combination of letters 'second' (case-insensitive) in the current folder.](#task_28_part_2) <details><summary>RU</summary>Найти строки в файлах, где есть комбинация букв 'second' в любом регистре в текущей папке</details> | grep -ri 'second' . |
+| <a id='back_task_29_part_2'>29</a>  | [Find lines in files with the combination of letters 'second' in all subfolders.](#task_29_part_2) <details><summary>RU</summary>Найти строки в файлах, где есть комбинация букв 'second' во всех папках ниже уровнем</details> | grep -r 'second' * |
+| <a id='back_task_30_part_2'>30</a>  | [Find only the path and filename in lines containing the combination of letters 'second' in the current folder.](#task_30_part_2) <details><summary>RU</summary>Найти только путь и название файла в строках которых есть комбинация букв 'second' в текущей папке</details> | grep -rl 'second' * |
+| <a id='back_task_31_part_2'>31</a>  | [Find all lines in all files where 'second' is not present.](#task_31_part_2) <details><summary>RU</summary>Найти все строки во всех файлах, где нет комбинации 'second'</details> | grep -r -v 'second' . |
+| <a id='back_task_32_part_2'>32</a>  | [Find only the filename and path of files where 'second' is not present.](#task_32_part_2) <details><summary>RU</summary>Найти только название и путь к файлам, где нет комбинации 'second'</details> | find . -type f -exec grep -L 'second' {} \; |
+| <a id='back_task_33_part_2'>33</a>  | [Display the last 4 lines of any text file in the terminal.](#task_33_part_2) <details><summary>RU</summary>Вывести в терминал 4 последних строк любого текстового файла</details> | find . -type f -exec bash -c 'echo 'File: $1'; tail -n 4 '$1'' _ {} \; <br />echo 'var. 2' <br />find . -type f -name '*.txt' -exec tail -n 4 {} \; -quit |
+| <a id='back_task_34_part_2'>34</a>  | [Display the first 4 lines of any text file in the terminal.](#task_34_part_2) <details><summary>RU</summary>Вывести в терминал 4 первые строки любого текстового файла.</details> | find . -type f -exec bash -c 'echo 'File: $1'; head -n 4 '$1'' _ {} \; <br />echo 'var. 2' <br />find . -type f -name '*.txt' -exec head -n 4 {} \; -quit |
+| <a id='back_task_35_part_2'>35</a>  | [One-liner command. Create a folder and create a text file with content.](#task_35_part_2) <details><summary>RU</summary>Команда в одну строку. Создать папку и создать текстовый файл с содержимым.</details> | mkdir new_folder && echo 'text file with content!' > new_folder/new_file.txt |
+| <a id='back_task_36_part_2'>36</a>  | [One-liner command. Move text files containing the word 'sec' to any one folder.](#task_36_part_2) <details><summary>RU</summary>Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово 'sec'</details> | mkdir -p move_dir && grep -rl 'sec' | xargs -I {} mv {} move_dir/ |
+| <a id='back_task_37_part_2'>37</a>  | [One-liner command. Copy text files containing the word 'sec' to any one folder.](#task_37_part_2) <details><summary>RU</summary>Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово 'sec'</details> | mkdir -p cp_dir && grep -rl 'sec' | xargs -I {} cp {} cp_dir/ |
+| <a id='back_task_38_part_2'>38</a>  | [One-liner command. Find all lines with 'sec' in all text files, copy and paste these lines into a new text file.](#task_38_part_2) <details><summary>RU</summary>Команда в одну строку. Найти все строки c 'sec' во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл.</details> | find . -type f -name '*.txt' -exec grep -H 'sec' {} + | tee new_sec_file.txt |
+| <a id='back_task_39_part_2'>39</a>  | [One-liner command. Delete text files containing the word 'sec' in their content.](#task_39_part_2) <details><summary>RU</summary>Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово 'sec'</details> | grep -rlZ 'sec' | xargs -0 -t -I {} rm -f {} |
+| <a id='back_task_40_part_2'>40</a>  | [Simply print the string 'Good job!!' to the terminal.](#task_40_part_2) <details><summary>RU</summary>Просто вывести в терминал строку 'Good job!!'</details> | echo 'Good job!!', |
 
-### <a id='task_1'>1. Create a folder dir_1</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_1_part_2'>1. Create a folder dir_1</a>  |  [Back to list](#back_task_1_part_2)
 Input:
 ``` bash
 mkdir dir_1
@@ -854,13 +816,12 @@ $ ls
 dir_1  start_all_task.sh
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_2'>2. Change directory to dir_1</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_2_part_2'>2. Change directory to dir_1</a>  |  [Back to list](#back_task_2_part_2)
 Input:
 ``` bash
 cd dir_1
@@ -870,13 +831,12 @@ Output:
 ```
 MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_3'>3. Create a folder inner_dir_1</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_3_part_2'>3. Create a folder inner_dir_1</a>  |  [Back to list](#back_task_3_part_2)
 Input:
 ``` bash
 mkdir -p inner_dir_1
@@ -892,13 +852,12 @@ $ ls
 inner_dir_1
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_4'>4. View the current directory</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_4_part_2'>4. View the current directory</a>  |  [Back to list](#back_task_4_part_2)
 Input:
 ``` bash
 pwd
@@ -910,13 +869,12 @@ MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir
 $ pwd
 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_5'>5. Inside dir_1, create an empty text file tf_1.txt</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_5_part_2'>5. Inside dir_1, create an empty text file tf_1.txt</a>  |  [Back to list](#back_task_5_part_2)
 Input:
 ``` bash
 touch tf_1.txt
@@ -932,13 +890,12 @@ $ ls
  inner_dir_1  tf_1.txt
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_6'>6. While inside dir_1, use the cat command to create a text file tf_2.txt with the following lines: - the first 1, - the second 2, - the third 3</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_6_part_2'>6. While inside dir_1, use the cat command to create a text file tf_2.txt with the following lines: - the first 1, - the second 2, - the third 3</a>  |  [Back to list](#back_task_6_part_2)
 Input:
 ``` bash
 cat > tf_2.txt << EOF
@@ -964,13 +921,12 @@ $ cat tf_2.txt
   - the third 3
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_7'>7. Enter the inner_dir_1 folder</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_7_part_2'>7. Enter the inner_dir_1 folder</a>  |  [Back to list](#back_task_7_part_2)
 Input:
 ``` bash
 cd inner_dir_1
@@ -981,13 +937,12 @@ Output:
 MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1 (dev)
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_8'>8. Use cat to create a text file tf_3.txt with any lines</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_8_part_2'>8. Use cat to create a text file tf_3.txt with any lines</a>  |  [Back to list](#back_task_8_part_2)
 Input:
 ``` bash
 cat > tf_3.txt << EOF
@@ -1016,13 +971,12 @@ Aenean commodo ligula eget dolor.
 Cum sociis natoque penatibus et
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_9'>9. Use cat to add the line 'the second 2' to the text file tf_3.txt</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_9_part_2'>9. Use cat to add the line 'the second 2' to the text file tf_3.txt</a>  |  [Back to list](#back_task_9_part_2)
 Input:
 ``` bash
 cat >> tf_3.txt << EOF
@@ -1046,13 +1000,12 @@ Cum sociis natoque penatibus et
 the second 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_10'>10. Use cat to add the line 'the sec 2' to the text file tf_3.txt</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_10_part_2'>10. Use cat to add the line 'the sec 2' to the text file tf_3.txt</a>  |  [Back to list](#back_task_10_part_2)
 Input:
 ``` bash
 cat >> tf_3.txt << EOF
@@ -1077,13 +1030,12 @@ the second 2
 the sec 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_11'>11. Use cat to add the line 'the sec 3' to the text file tf_2.txt</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_11_part_2'>11. Use cat to add the line 'the sec 3' to the text file tf_2.txt</a>  |  [Back to list](#back_task_11_part_2)
 Input:
 ``` bash
 cat >> tf_2.txt << EOF
@@ -1102,13 +1054,12 @@ $ cat tf_2.txt
 the sec 3
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_12'>12. Use cat to add the line 'the SeCoNd 2' to the text file tf_3.txt</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_12_part_2'>12. Use cat to add the line 'the SeCoNd 2' to the text file tf_3.txt</a>  |  [Back to list](#back_task_12_part_2)
 Input:
 ``` bash
 cat >> tf_3.txt << EOF
@@ -1134,13 +1085,12 @@ the sec 2
 the SeCoNd 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_13'>13. Use cat to add the line 'the seConD 2' to the text file tf_2.txt</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_13_part_2'>13. Use cat to add the line 'the seConD 2' to the text file tf_2.txt</a>  |  [Back to list](#back_task_13_part_2)
 Input:
 ``` bash
 cat >> tf_2.txt << EOF
@@ -1161,13 +1111,12 @@ the sec 3
 the seConD 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_14'>14. Create a text file tf_4.txt with 15 lines.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_14_part_2'>14. Create a text file tf_4.txt with 15 lines.</a>  |  [Back to list](#back_task_14_part_2)
 Input:
 ``` bash
 for i in {1..15}; do
@@ -1206,13 +1155,12 @@ $ cat tf_4.txt
 15 string
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_15'>15. Create a text file tF_5.txt with 13 lines.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_15_part_2'>15. Create a text file tF_5.txt with 13 lines.</a>  |  [Back to list](#back_task_15_part_2)
 Input:
 ``` bash
 for i in {1..13}; do
@@ -1250,13 +1198,12 @@ $ cat tF_5.txt
 13 string
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_16'>16. List all files in the current folder.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_16_part_2'>16. List all files in the current folder.</a>  |  [Back to list](#back_task_16_part_2)
 Input:
 ``` bash
 ls
@@ -1269,13 +1216,12 @@ $ ls
 tF_5.txt  tf_2.txt  tf_3.txt  tf_4.txt
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_17'>17. Go back to the parent directory (from inner_dir_1 to dir_1)</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_17_part_2'>17. Go back to the parent directory (from inner_dir_1 to dir_1)</a>  |  [Back to list](#back_task_17_part_2)
 Input:
 ``` bash
 cd ..
@@ -1289,13 +1235,12 @@ $ cd ..
  MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_18'>18. Display the contents of the file tf_3.txt in the terminal.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_18_part_2'>18. Display the contents of the file tf_3.txt in the terminal.</a>  |  [Back to list](#back_task_18_part_2)
 Input:
 ``` bash
 cat inner_dir_1/tf_3.txt
@@ -1314,13 +1259,12 @@ the sec 2
 the SeCoNd 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_19'>19. Find the path to the file tf_4.txt</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_19_part_2'>19. Find the path to the file tf_4.txt</a>  |  [Back to list](#back_task_19_part_2)
 Input:
 ``` bash
 echo 'find $PWD -type f -name tf_4.txt'
@@ -1338,13 +1282,12 @@ $ find $PWD -type f -name tf_4.txt
 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1/inner_dir_1/tf_4.txt
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_20'>20. Clear the contents of the file tf_4.txt without deleting the file itself.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_20_part_2'>20. Clear the contents of the file tf_4.txt without deleting the file itself.</a>  |  [Back to list](#back_task_20_part_2)
 Input:
 ``` bash
 truncate -s 0 tf_4.txt
@@ -1376,13 +1319,12 @@ $ find $PWD -type f -name tf_4.txt -exec truncate -s 0 {} \;
 $ cat ./inner_dir_1/tf_4.txt
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_21'>21. Find the paths of files with 'tf' in the name.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_21_part_2'>21. Find the paths of files with 'tf' in the name.</a>  |  [Back to list](#back_task_21_part_2)
 Input:
 ``` bash
 find . -type f -name '*tf*'
@@ -1399,13 +1341,12 @@ $ find . -type f -name '*tf*'
 ./tf_2.txt
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_22'>22. Find the paths of files with 'tf' in the name, ignoring case.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_22_part_2'>22. Find the paths of files with 'tf' in the name, ignoring case.</a>  |  [Back to list](#back_task_22_part_2)
 Input:
 ``` bash
 find . -type f -iname '*tf*'
@@ -1422,13 +1363,12 @@ $ find . -type f -iname '*tf*'
 ./tf_1.txt
 ./tf_2.txt
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_23'>23. Find lines in files with the combination of letters 'sec' in the current folder.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_23_part_2'>23. Find lines in files with the combination of letters 'sec' in the current folder.</a>  |  [Back to list](#back_task_23_part_2)
 Input:
 ``` bash
 grep -r 'sec' *
@@ -1445,13 +1385,12 @@ inner_dir_1/tf_3.txt:the sec 2
 tf_2.txt:  - the second 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_24'>24. Find lines in files with the combination of letters 'sec' (case-insensitive) in the current folder.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_24_part_2'>24. Find lines in files with the combination of letters 'sec' (case-insensitive) in the current folder.</a>  |  [Back to list](#back_task_24_part_2)
 Input:
 ``` bash
 grep -ri 'sec' *
@@ -1470,13 +1409,12 @@ inner_dir_1/tf_3.txt:the SeCoNd 2
 tf_2.txt:  - the second 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_25'>25. Find lines in files with only the combination of letters 'sec' in the current folder.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_25_part_2'>25. Find lines in files with only the combination of letters 'sec' in the current folder.</a>  |  [Back to list](#back_task_25_part_2)
 Input:
 ``` bash
 grep -rw 'sec' *
@@ -1490,13 +1428,12 @@ inner_dir_1/tf_2.txt:the sec 3
 inner_dir_1/tf_3.txt:the sec 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_26'>26. Find lines in files with only the combination of letters 'sec' (case-insensitive) in the current folder.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_26_part_2'>26. Find lines in files with only the combination of letters 'sec' (case-insensitive) in the current folder.</a>  |  [Back to list](#back_task_26_part_2)
 Input:
 ``` bash
 find . -type f -exec grep -iw 'sec' {} +
@@ -1510,13 +1447,12 @@ $ find . -type f -exec grep -iw 'sec' {} +
 ./inner_dir_1/tf_3.txt:the sec 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_27'>27. Find lines in files with the combination of letters 'second' in the current folder.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_27_part_2'>27. Find lines in files with the combination of letters 'second' in the current folder.</a>  |  [Back to list](#back_task_27_part_2)
 Input:
 ``` bash
 grep -r 'second' .
@@ -1530,13 +1466,12 @@ $ grep -r 'second' .
 ./tf_2.txt:  - the second 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_28'>28. Find lines in files with the combination of letters 'second' (case-insensitive) in the current folder.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_28_part_2'>28. Find lines in files with the combination of letters 'second' (case-insensitive) in the current folder.</a>  |  [Back to list](#back_task_28_part_2)
 Input:
 ``` bash
 grep -ri 'second' .
@@ -1552,13 +1487,12 @@ $ grep -ri 'second' .
 ./tf_2.txt:  - the second 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_29'>29. Find lines in files with the combination of letters 'second' in all subfolders.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_29_part_2'>29. Find lines in files with the combination of letters 'second' in all subfolders.</a>  |  [Back to list](#back_task_29_part_2)
 Input:
 ``` bash
 grep -r 'second' *
@@ -1572,13 +1506,12 @@ inner_dir_1/tf_3.txt:the second 2
 tf_2.txt:  - the second 2
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_30'>30. Find only the path and filename in lines containing the combination of letters 'second' in the current folder.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_30_part_2'>30. Find only the path and filename in lines containing the combination of letters 'second' in the current folder.</a>  |  [Back to list](#back_task_30_part_2)
 Input:
 ``` bash
 grep -rl 'second' *
@@ -1592,13 +1525,12 @@ inner_dir_1/tf_3.txt
 tf_2.txt
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_31'>31. Find all lines in all files where 'second' is not present.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_31_part_2'>31. Find all lines in all files where 'second' is not present.</a>  |  [Back to list](#back_task_31_part_2)
 Input:
 ``` bash
 grep -r -v 'second' .
@@ -1633,13 +1565,12 @@ $ grep -r -v 'second' .
 ./tf_2.txt:  - the third 3
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_32'>32. Find only the filename and path of files where 'second' is not present.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_32_part_2'>32. Find only the filename and path of files where 'second' is not present.</a>  |  [Back to list](#back_task_32_part_2)
 Input:
 ``` bash
 find . -type f -exec grep -L 'second' {} \;
@@ -1655,13 +1586,12 @@ $ find . -type f -exec grep -L 'second' {} \;
 ./tf_1.txt
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_33'>33. Display the last 4 lines of any text file in the terminal.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_33_part_2'>33. Display the last 4 lines of any text file in the terminal.</a>  |  [Back to list](#back_task_33_part_2)
 Input:
 ``` bash
 find . -type f -exec bash -c 'echo 'File: $1'; tail -n 4 '$1'' _ {} \;
@@ -1694,13 +1624,12 @@ File: ./tf_2.txt
   - the third 3
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_34'>34. Display the first 4 lines of any text file in the terminal.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_34_part_2'>34. Display the first 4 lines of any text file in the terminal.</a>  |  [Back to list](#back_task_34_part_2)
 Input:
 ``` bash
 find . -type f -exec bash -c 'echo 'File: $1'; head -n 4 '$1'' _ {} \;
@@ -1733,29 +1662,22 @@ File: ./tf_2.txt
   - the third 3
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_35'>35. One-liner command. Create a folder and create a text file with content.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_35_part_2'>35. One-liner command. Create a folder and create a text file with content.</a>  |  [Back to list](#back_task_35_part_2)
 Input:
 ``` bash
 mkdir new_folder && echo 'text file with content!' > new_folder/new_file.txt
 ```
 
-Output:
-```
-
-```
 #### Description:
 
 description coming soon
 
-### <a id='task_36'>36. One-liner command. Move text files containing the word 'sec' to any one folder.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_36_part_2'>36. One-liner command. Move text files containing the word 'sec' to any one folder.</a>  |  [Back to list](#back_task_36_part_2)
 Input:
 ``` bash
 mkdir -p move_dir && grep -rl 'sec' | xargs -I {} mv {} move_dir/
@@ -1782,13 +1704,12 @@ $ tree
 2 directories, 7 files
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_37'>37. One-liner command. Copy text files containing the word 'sec' to any one folder.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_37_part_2'>37. One-liner command. Copy text files containing the word 'sec' to any one folder.</a>  |  [Back to list](#back_task_37_part_2)
 Input:
 ``` bash
 mkdir -p cp_dir && grep -rl 'sec' | xargs -I {} cp {} cp_dir/
@@ -1818,13 +1739,12 @@ $ tree
 3 directories, 9 files
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_38'>38. One-liner command. Find all lines with 'sec' in all text files, copy and paste these lines into a new text file.</a>  
-[Back to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_38_part_2'>38. One-liner command. Find all lines with 'sec' in all text files, copy and paste these lines into a new text file.</a>  |  [Back to list](#back_task_38_part_2)
 Input:
 ``` bash
 find . -type f -name '*.txt' -exec grep -H 'sec' {} + | tee new_sec_file.txt
@@ -1864,13 +1784,12 @@ $ tree
 3 directories, 10 files
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_39'>39. One-liner command. Delete text files containing the word 'sec' in their content.</a>  |[Back
- to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_39_part_2'>39. One-liner command. Delete text files containing the word 'sec' in their content.</a>  |  [Back to list](#back_task_39_part_2)
 Input:
 ``` bash
 grep -rlZ 'sec' | xargs -0 -t -I {} rm -f {}
@@ -1901,13 +1820,12 @@ $ tree
 3 directories, 4 files
 
 ```
+
 #### Description:
 
 description coming soon
 
-### <a id='task_40'>40. Simply print the string 'Good job!!' to the terminal.</a>  |[Back
- to part 2 list](#part_2) or [Back to part 1 list](#part_1)
-
+### <a id='task_40_part_2'>40. Simply print the string 'Good job!!' to the terminal.</a>  |  [Back to list](#back_task_40_part_2)
 Input:
 ``` bash
 echo 'Good job!!',
@@ -1920,6 +1838,8 @@ $ echo 'Good job!!'
 Good job!!
 
 ```
+
 #### Description:
 
 description coming soon
+
