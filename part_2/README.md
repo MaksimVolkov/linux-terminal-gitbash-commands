@@ -1,4 +1,4 @@
-# <a id='back_to_list'>Linux terminal (GitBash) commands part</a>
+# <a id='back_to_list'>Linux terminal (GitBash) commands</a>
 
 ## Go to [Part 1](#back_to_list_p_1) list --->
 
@@ -920,16 +920,6 @@ Input:
 mkdir new_folder && echo 'text file with content!' > new_folder/new_file.txt
 ```
 
-#### Description:
-
-description coming soon
-
-### <a id='task_36_part_2'>36. One-liner command. Move text files containing the word 'sec' to any one folder.</a>  |  [Back to list](#back_task_36_part_2)
-Input:
-``` bash
-mkdir -p move_dir && grep -rl 'sec' | xargs -I {} mv {} move_dir/
-```
-
 Output:
 ```
 MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)
@@ -950,6 +940,16 @@ $ tree
 
 2 directories, 7 files
 
+```
+
+#### Description:
+
+description coming soon
+
+### <a id='task_36_part_2'>36. One-liner command. Move text files containing the word 'sec' to any one folder.</a>  |  [Back to list](#back_task_36_part_2)
+Input:
+``` bash
+mkdir -p move_dir && grep -rl 'sec' | xargs -I {} mv {} move_dir/
 ```
 
 #### Description:
