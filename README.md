@@ -1,4 +1,4 @@
-# <a id='back_to_list'>Linux terminal (GitBash) commands part</a>
+# <a id='back_to_list'>Linux terminal (GitBash) commands</a>
 
 ## Go to [Part 2](#back_to_list_p_2) list --->
 
@@ -9,7 +9,7 @@
 | <a id='back_task_1_part_1'>1</a>  | [Show the current directory](#task_1_part_1) <details><summary>RU</summary>Посмотреть где я</details> | pwd |
 | <a id='back_task_2_part_1'>2</a>  | [Create a folder](#task_2_part_1) <details><summary>RU</summary>Создать папку</details> | mkdir screenshots <br />ls |
 | <a id='back_task_3_part_1'>3</a>  | [Enter folder](#task_3_part_1) <details><summary>RU</summary>Зайти в папку</details> | cd screenshots <br />pwd |
-| <a id='back_task_4_part_1'>4</a>  | [Create 3 folders](#task_4_part_1) <details><summary>RU</summary>Создать 3 папки</details> | mkdir task_4 <br />cd task_4  <br />mkdir cild_dir_1 cild_dir_2 cild_dir_3 <br />cd .. <br />echo"extra_examples" <br />cd task_4 <br />mkdir extra_examples <br />cd extra_examples <br />mkdir dir{1..5} <br />ls  <br />mkdir {1,2,3} <br />ls <br />mkdir test{01..5}   <br />ls   <br />mkdir -p dir_parent/cild_dir_{1..3} <br />ls <br />cd dir_parent <br />ls <br />cd .. <br />mkdir -p `date '+%y%m%d'`/{1,2,3} <br />ls <br />cd `date '+%y%m%d'` <br />ls <br />cd .. |
+| <a id='back_task_4_part_1'>4</a>  | [Create 3 folders](#task_4_part_1) <details><summary>RU</summary>Создать 3 папки</details> | mkdir task_4 <br />cd task_4  <br />mkdir cild_dir_1 cild_dir_2 cild_dir_3 <br />cd .. <br />echo"extra_examples" <br />cd task_4 <br /> <br />mkdir extra_examples <br />cd extra_examples <br />mkdir dir{1..5} <br />ls  <br />mkdir {1,2,3} <br />ls <br />mkdir test{01..5}   <br />ls   <br />mkdir -p dir_parent/cild_dir_{1..3} <br />ls <br />cd dir_parent <br />ls <br />cd .. <br />mkdir -p `date '+%y%m%d'`/{1,2,3} <br />ls <br />cd `date '+%y%m%d'` <br />ls <br />cd .. |
 | <a id='back_task_5_part_1'>5</a>  | [Go to any folder](#task_5_part_1) <details><summary>RU</summary>Зайти в любую папку</details> | mkdir -p task_5/cild_dir_task_{1..3} <br />tree <br />cd task_5/cild_dir_task_2 <br />pwd |
 | <a id='back_task_6_part_1'>6</a>  | [Create 5 files (3 txt, 2 json)](#task_6_part_1) <details><summary>RU</summary>Создать 5 файлов (3 txt, 2 json)</details> | mkdir task_6 <br />cd task_6 <br />touch file1.txt file2.txt file3.txt file4.json file5.json <br />cd .. <br />tree |
 | <a id='back_task_7_part_1'>7</a>  | [Create 3 folders](#task_7_part_1) <details><summary>RU</summary>Создать 3 папки</details> | mkdir -p task_7/task_folder{1..3} <br />cd task_7 <br />touch task_folder{1..3}/task_7.log task_folder{1..3}/task_7.json task_folder{1..3}/task_7.txt <br />tree |
@@ -97,6 +97,7 @@ mkdir cild_dir_1 cild_dir_2 cild_dir_3
 cd ..
 echo"extra_examples"
 cd task_4
+
 mkdir extra_examples
 cd extra_examples
 mkdir dir{1..5}
@@ -639,6 +640,13 @@ Input:
 date
 ```
 
+Output:
+```
+MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands (dev)
+$ date
+Fri Aug 1 16:02:14 FLEDT 2023
+```
+
 #### Description:
 
 description coming soon
@@ -751,7 +759,7 @@ Item 13: Move any 2 files you created to any other folder.
 
 description coming soon
 
-# <a id='back_to_list'>Linux terminal (GitBash) commands part</a>
+# <a id='back_to_list'>Linux terminal (GitBash) commands</a>
 
 ## Go to [Part 1](#back_to_list_p_1) list --->
 
@@ -1673,16 +1681,6 @@ Input:
 mkdir new_folder && echo 'text file with content!' > new_folder/new_file.txt
 ```
 
-#### Description:
-
-description coming soon
-
-### <a id='task_36_part_2'>36. One-liner command. Move text files containing the word 'sec' to any one folder.</a>  |  [Back to list](#back_task_36_part_2)
-Input:
-``` bash
-mkdir -p move_dir && grep -rl 'sec' | xargs -I {} mv {} move_dir/
-```
-
 Output:
 ```
 MINGW64 /c/var/1a-testing-course/linux-terminal-gitbash-commands/part_2/temp_dir/dir_1 (dev)
@@ -1703,6 +1701,16 @@ $ tree
 
 2 directories, 7 files
 
+```
+
+#### Description:
+
+description coming soon
+
+### <a id='task_36_part_2'>36. One-liner command. Move text files containing the word 'sec' to any one folder.</a>  |  [Back to list](#back_task_36_part_2)
+Input:
+``` bash
+mkdir -p move_dir && grep -rl 'sec' | xargs -I {} mv {} move_dir/
 ```
 
 #### Description:
