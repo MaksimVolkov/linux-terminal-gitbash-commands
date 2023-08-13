@@ -1,4 +1,4 @@
-# <a id='back_to_list'>Linux terminal (GitBash) commands</a>
+# <a id='back_to_list'>Linux terminal (GitBash) commands part</a>
 
 ## Go to [Part 2](#back_to_list_p_2) list --->
 
@@ -758,4 +758,3 @@ Item 13: Move any 2 files you created to any other folder.
 #### Description:
 
 description coming soon
-
